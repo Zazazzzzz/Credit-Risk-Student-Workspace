@@ -1,0 +1,65 @@
+﻿
+## 🧾 **Task: Analyze and Visualize Real GDP Growth for Two Countries**
+
+# the data is from IMF
+
+---
+
+### ✅ **Step 1: Load and Clean the Data**
+
+> **Objective**: Import the data from Excel and prepare it for analysis by cleaning, reshaping, and converting types.
+
+**Actions:**
+
+1. **Read the Excel file** containing GDP growth data.
+
+2. **Remove non-country rows** (like headers or footnotes).
+
+3. **Handle missing data**.
+
+4. **Rename the first column** to `'country'` (original name was too long).
+
+5. **Reshape the data** from wide to long format using `pd.melt()`:
+
+   * This puts each year's GDP growth into its own row, making it easier to analyze over time.
+
+6. **Convert data types**:
+
+   * Ensure `'year'` is numeric.
+   * Convert GDP growth values to floats.
+
+7. **Sort and filter the data**:
+
+   * Sort by country and year for better structure.
+   * Optionally remove outlier regions (e.g., "West Bank and Gaza").
+
+---
+
+### ✅ **Step 2: Add Country-Level Statistics**
+
+> **Objective**: Calculate the **average GDP growth** for each country and attach that to every row.
+
+**Actions:**
+
+1. **Use `groupby()` and `transform()`** to calculate average growth per country and keep the values next to each row:
+
+
+2. This new column allows easy filtering, comparison, or sorting based on average growth without collapsing the dataset.
+
+---
+
+### ✅ **Step 3: Plot Real GDP Growth for Two Countries**
+
+> **Objective**: Visualize GDP growth trends over time for two Countries using `matplotlib`.
+
+**Actions:**
+
+1. **Filter the data** for just the two countries:
+
+
+2. **Reshape the data** into wide format, where each country is a column and years are rows:
+
+
+3. **Create the plot using `plt.figure()`** for more customization:
+
+
