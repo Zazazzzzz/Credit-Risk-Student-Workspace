@@ -12,8 +12,6 @@ This repository is a shared workspace for practicing version control using Git a
 
 The goal is not perfection, but practice.
 
-
-
 ---
 
 
