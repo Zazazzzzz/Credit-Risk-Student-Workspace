@@ -1,5 +1,5 @@
 ## Task: Simulating Weather Outcomes in Two Regions
-
+ 
 ### Setting
 
 We model tomorrow’s weather in two regions. The possible outcomes are:
