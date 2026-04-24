@@ -139,10 +139,10 @@ print("Region2:\n", region2_counts)
 Questions:
 
 * Out of 100 simulated days, how many hail days occurred in Region 1?
-  8.
+  6.
   
 * Out of 100 simulated days, how many hail days occurred in Region 2?
-  4.
+  5.
 
 * Are the observed counts exactly equal to the theoretical probabilities times 100?
   No.
@@ -157,3 +157,59 @@ Questions:
 region1_freq = df["region1"].value_counts(normalize=True).sort_index()
 region2_freq = df["region2"].value_counts(normalize=True).sort_index()
 # normalize=True helps to make value counts into frequency
+
+print("Region1:\n", region1_freq)
+print("Region2:\n", region2_freq)
+
+"""
+Questions:
+
+* Compare the empirical frequencies with the theoretical probabilities
+  probabilities1 = [0.1, 0.3, 0.6]
+  empirical_frequencies1 = [0.06, 0.31, 0.63]
+
+  probabilities2 = [0.02, 0.7, 0.28]
+  empirical_frequencies2 = [0.05, 0.66, 0.29]
+  The are not exactly the same but close.
+
+* Are they close?
+  Yes.
+
+* What would happen if (N) were increased to 1000 or 10000?
+  The results would be closer to theoretical probabilities.
+
+"""
+
+# Step7. Interpret the results from a risk perspective
+"""
+Take **hail** as the bad outcome.
+
+Questions:
+
+* Which region is riskier with respect to hail?
+  Region 1.
+
+* If you are risk-averse, which region would you choose?
+  Region 2.
+"""
+
+
+# Step 8. Reflect on the assumptions
+
+'''
+This model is simple because of strong assumptions.
+
+Questions:
+
+* What does independence mean here?
+  The weather in region 1 won't affect the weatehr in region 2.
+
+* What does it mean that the probabilities are fixed?
+  The probabilities of hai, rain and sunny won't change over time.
+
+* Why is this model easy to simulate?
+  Because the probabilities of the events are fixed and uncorrelated.
+
+* Why may it still be unrealistic in real life?
+  Because in real life weather exhibits dependencies and changing probability distributions.
+'''
