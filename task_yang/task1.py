@@ -1,3 +1,5 @@
+from encodings.punycode import decode_generalized_number
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -86,3 +88,72 @@ Questions:
   Yes.
 """
 
+
+# Step4. draw histograms for both regions
+fig, axes = plt.subplots(1, 2, figsize=(12,5), sharey=True)
+# axes: return to axes[0] and axes[1], the two figures of region1 and region2
+# sharey=True: use the same y-axis scale for both plots
+
+bins = [0.5, 1.5, 2.5, 3.5]
+# set 1, 2 and 3 in the middle
+
+# region1
+axes[0].hist(df["region1"], bins=bins, edgecolor='black')
+axes[0].set_title("Region 1 Distribution")
+axes[0].set_xticks([1, 2, 3],["hail", "rain", "sunny"])
+axes[0].set_xlabel("Weather Outcome")
+axes[0].set_ylabel("Frequency")
+
+# region2
+axes[1].hist(df["region2"], bins=bins, edgecolor='black')
+axes[1].set_title("Region 2 Distribution")
+axes[1].set_xticks([1, 2, 3],["hail", "rain", "sunny"])
+axes[1].set_xlabel("Weather Outcome")
+axes[1].set_ylabel("Frequency")
+
+plt.show()
+
+"""
+Questions:
+
+* Which region has the higher hail risk?
+  Region 1.
+
+* Which region has the higher rain probability?
+  Region 2.
+
+* Which region seems better to you and why?
+  Region 1 seems better to me because it has the higher probability of sunny days and I love sunny days.
+  
+"""
+
+
+# Step5. Count what happened out of 100 simulations
+region1_counts = df["region1"].value_counts().sort_index()
+region2_counts = df["region2"].value_counts().sort_index()
+
+print("Region1:\n", region1_counts)
+print("Region2:\n", region2_counts)
+
+"""
+Questions:
+
+* Out of 100 simulated days, how many hail days occurred in Region 1?
+  8.
+  
+* Out of 100 simulated days, how many hail days occurred in Region 2?
+  4.
+
+* Are the observed counts exactly equal to the theoretical probabilities times 100?
+  No.
+  
+* Why or why not?
+  Because the theoretical probability is the probability when the simulation is repeated for infinite times.
+
+"""
+
+
+# Step6. Compute relative frequencies
+region1_freq = df["region1"].value_counts(normalize=True).sort_index()
+region2_freq = df["region2"].value_counts(normalize=True).sort_index()
+# normalize=True helps to make value counts into frequency
