@@ -24,7 +24,7 @@ sim_2 = np.random.choice(values, size=n, p=probabilities2)
 
 2. N = 100 means we simulate 100 days.
 
-3.This is a simulation because the data are randomly generated based on the given probability distribution.
+3. This is a simulation because the data are randomly generated based on the given probability distribution.
 
 """
 
@@ -123,7 +123,7 @@ Region 2: 2 77 21
 
 2. 2 days.
 
-3 & 4.The observed counts are not exactly equal to the theoretical probabilities times 100. This is because the data are randomly generated, and due to randomness and finite sample size, the results can vary.
+3 & 4. The observed counts are not exactly equal to the theoretical probabilities times 100. This is because the data are randomly generated, and due to randomness and finite sample size, the results can vary.
 
 """
 
