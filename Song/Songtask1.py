@@ -145,7 +145,7 @@ Region 1 frequencies: 0.01 0.66 0.33
 
 2. Yes, they are reasonably close, but not exactly equal due to randomness.
 
-3.If N were increased, the empirical frequencies would become closer to the theoretical probabilities. As the number of trials increases, the actual results get closer to the theoretical probabilities.
+3. If N were increased, the empirical frequencies would become closer to the theoretical probabilities. As the number of trials increases, the actual results get closer to the theoretical probabilities.
 
 """
 
