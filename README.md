@@ -18,85 +18,10 @@ The goal is not perfection, but practice.
 
 
 
-## What You Should Do
+## Task on 27.04
 
 
-
-### 1. Clone (pull) the repository
-
-
-
-Start by cloning the repository to your local machine:
-
-
-
-```bash
-
-git clone <repository-url>
-
-```
-
-
-
----
-
-
-
-### 2. Create your own file
-
-
-
-* Add a new file with any name you like
-
-&#x20; (e.g. `yourname.txt`, `exercise1.py`, `notes.md`)
-
-* This file will be your personal workspace for the semester
-
-
-
----
-
-
-
-### 3. Update your file regularly
-
-
-
-* Add content related to your tasks, exercises, or notes
-
-* Commit and push updates as you progress
-
-
-
-Example workflow:
-
-
-
-```bash
-
-git add your_file_name
-
-git commit -m "Update my file"
-
-git push
-
-```
-
-
-
----
-
-
-
-### 4. Optional: Collaborate with others
-
-
-
-* You may create a shared file with one or more classmates
-
-* Work together by editing and updating the same file over time
-
-* This helps you practice resolving merge conflicts and collaboration
+* Task3 in the Statistic folder
 
 
 
@@ -108,7 +33,7 @@ git push
 
 
 
-* There is **no strict format** for your file
+* There is **no strict format** for your folder
 
 * You are free to experiment and make mistakes
 
@@ -124,23 +49,18 @@ This repository is a **practice environment**, not a graded submission.
 
 
 
-## Notes
+## What You Should Do
 
 
 
-* Try to commit regularly rather than uploading everything at once
+* Create your own folder
 
-* Write short commit messages describing your changes
+* Update it throughout the semester
 
-* Pull the latest version before starting new work:
+* Optionally collaborate with others
 
+* Do not worry about mistakes 
 
-
-```bash
-
-git pull
-
-```
 
 
 
@@ -148,7 +68,7 @@ git pull
 
 
 
-## Notes: branch
+## Note: branch
 
 
 
@@ -170,21 +90,6 @@ Content may be incomplete, inconsistent, or contain errors.
 
 
 
----
-
-
-
-## Summary
-
-
-
-* Create your own file
-
-* Update it throughout the semester
-
-* Optionally collaborate with others
-
-* Do not worry about mistakes 
 
 
 
