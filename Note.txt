@@ -1,0 +1,28 @@
+C:\Users\Zaza>cd Desktop
+
+C:\Users\Zaza\Desktop>git clone https://github.com/Zazazzzzz/Credit-Risk-Student-Workspace.git
+
+C:\Users\Zaza\Desktop>git cd Credit-Risk-Student-Workspace
+
+C:\Users\Zaza\Desktop\Credit-Risk-Student-Workspace>git add .
+
+C:\Users\Zaza\Desktop\Credit-Risk-Student-Workspace>git commit -m "first commit"
+
+C:\Users\Zaza\Desktop\Credit-Risk-Student-Workspace>git push -u origin zaza
+
+
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (11/11), 1.60 KiB | 1.60 MiB/s, done.
+Total 11 (delta 2), reused 4 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'zaza' on GitHub by visiting:
+remote:      https://github.com/Zazazzzzz/Credit-Risk-Student-Workspace/pull/new/zaza
+remote:
+To https://github.com/Zazazzzzz/Credit-Risk-Student-Workspace.git
+ * [new branch]      zaza -> zaza
+Branch 'zaza' set up to track remote branch 'zaza' from 'origin'.
+
