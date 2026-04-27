@@ -138,3 +138,44 @@ print("Independence means that the weather outcome on one simulated day does not
 print("Fixed probabilities mean that the probabilities do not change over time.")
 print("The model is easy to simulate because each day can be generated using the same probability distribution.")
 print("It may be unrealistic because real weather can depend on seasons, previous days, geography, and changing conditions.")
+
+
+
+
+
+
+
+
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy.stats import norm, poisson
+
+# 设置绘图区域
+fig, ax = plt.subplots(1, 2, figsize=(12, 5))
+
+# 1. 连续型：正态分布 (Normal Distribution)
+mu, sigma = 0, 1  # 均值和标准差
+x_norm = np.linspace(mu - 4*sigma, mu + 4*sigma, 100)
+# 绘制 PDF (概率密度函数)
+ax[0].plot(x_norm, norm.pdf(x_norm, mu, sigma), label='Normal(0,1)')
+ax[0].set_title('Continuous: Normal Distribution PDF')
+ax[0].set_xlabel('Value (e.g., Asset Return)')
+ax[0].set_ylabel('Density')
+ax[0].grid(True)
+ax[0].legend()
+
+# 2. 离散型：泊松分布 (Poisson Distribution)
+lam = 3  # 到达强度
+x_poi = np.arange(0, 11)
+# 绘制 PMF (概率质量函数)
+ax[1].stem(x_poi, poisson.pmf(x_poi, lam), label='Poisson(λ=3)', basefmt=" ")
+ax[1].set_title('Discrete: Poisson Distribution PMF')
+ax[1].set_xlabel('Count (e.g., Number of Defaults)')
+ax[1].set_ylabel('Probability')
+ax[1].grid(True)
+ax[1].legend()
+
+plt.tight_layout()
+plt.show()
