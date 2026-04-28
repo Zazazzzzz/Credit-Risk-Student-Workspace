@@ -1,8 +1,5 @@
-from statistics import quantiles
-
 import pandas as pd
 import matplotlib.pyplot as plt
-from matplotlib.lines import lineStyles
 
 # Task 1: Load and Prepare Data
 
