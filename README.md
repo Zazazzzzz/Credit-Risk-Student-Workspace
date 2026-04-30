@@ -22,7 +22,9 @@ The goal is not perfection, but practice.
 
 
 * Task3 in the Statistic folder
+
 * Page 45 on the slides
+
 * Page 63 on the slides
 
 
