@@ -18,10 +18,12 @@ The goal is not perfection, but practice.
 
 
 
-## Task on 27.04
+## Tasks in the week
 
 
 * Task3 in the Statistic folder
+* Page 45 on the slides
+* Page 63 on the slides
 
 
 
