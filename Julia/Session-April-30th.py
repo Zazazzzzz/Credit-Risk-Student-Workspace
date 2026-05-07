@@ -8,7 +8,7 @@ sigma_V= 0.2 #asset volatility
 T=1.0 #1 year
 B=90   #Debt face value (default barrier at maturity)
 N=1000  #number of simulation steps
-dt=(T/N)  #"time increment"
+dt=(T/N)  #time increment"
 
 np.random.seed(42)
 
@@ -92,7 +92,7 @@ portfolio_losses_MC= loss_matrix.sum(axis=1)
 # aggregates across firms
 
 EL = portfolio_losses_MC.mean()
-UL = portfolio_losses_MC.std() #volatility
+UL = portfolio_losses_MC.std() #volatility, VaR
 print("Expected Loss:", EL)
 print("Unexpected Loss:", UL)
 
