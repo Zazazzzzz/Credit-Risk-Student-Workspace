@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>simulation_resport.ipynb</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #080808;}
+.s1 { color: #0033b3;}
+.s2 { color: #8c8c8c; font-style: italic;}
+.s3 { color: #1750eb;}
+.s4 { color: #067d17;}
+.s5 { color: #0037a6;}
+.ls0 { height: 1px; border-width: 0; color: #43454a; background-color:#43454a}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+simulation_resport.ipynb</font>
+</center></td></tr></table>
+<pre><span class="s0">#%% md 
+# Portfolio Credit Risk Report 
+## University of Freiburg — Credit Risk Course 
+**Author:** Shazia 
+**Date:** May 2026 <hr class="ls0">#%% md 
+## 1. Introduction 
+This report presents a Monte Carlo simulation of a credit portfolio 
+consisting of 10 firms. Each firm has a different probability of default 
+ranging from 1% to 10%. We simulate 1000 scenarios to analyze the 
+portfolio loss distribution. <hr class="ls0">#%% 
+</span><span class="s1">import </span><span class="s0">numpy </span><span class="s1">as </span><span class="s0">np</span>
+<span class="s1">import </span><span class="s0">matplotlib.pyplot </span><span class="s1">as </span><span class="s0">plt</span>
+
+<span class="s2"># Setup</span>
+<span class="s0">n_firms = </span><span class="s3">10</span>
+<span class="s0">default_probs = [</span><span class="s3">0.01</span><span class="s0">, </span><span class="s3">0.02</span><span class="s0">, </span><span class="s3">0.03</span><span class="s0">, </span><span class="s3">0.04</span><span class="s0">, </span><span class="s3">0.05</span><span class="s0">,</span>
+                 <span class="s3">0.06</span><span class="s0">, </span><span class="s3">0.07</span><span class="s0">, </span><span class="s3">0.08</span><span class="s0">, </span><span class="s3">0.09</span><span class="s0">, </span><span class="s3">0.10</span><span class="s0">]</span>
+<span class="s0">loss_per_default = </span><span class="s3">50000</span>
+<span class="s0">n_simulations = </span><span class="s3">1000</span>
+
+<span class="s2"># Simulate</span>
+<span class="s0">defaults = np.random.binomial(n=</span><span class="s3">1</span><span class="s0">, p=default_probs,</span>
+                               <span class="s0">size=(n_simulations, n_firms))</span>
+<span class="s0">losses = defaults * loss_per_default</span>
+<span class="s0">total_losses = losses.sum(axis=</span><span class="s3">1</span><span class="s0">)</span>
+
+<span class="s0">print(</span><span class="s4">&quot;Simulation complete!&quot;</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s4">f&quot;Total scenarios simulated: </span><span class="s5">{</span><span class="s0">n_simulations</span><span class="s5">}</span><span class="s4">&quot;</span><span class="s0">)</span><hr class="ls0"><span class="s0">#%% md 
+## 2. Key Risk Metrics 
+The table below summarizes the main risk measures derived from the simulation. <hr class="ls0">#%% md 
+</span><hr class="ls0"><span class="s0">#%% 
+mean_loss = total_losses.mean()</span>
+<span class="s0">var_95 = np.percentile(total_losses, </span><span class="s3">95</span><span class="s0">)</span>
+<span class="s0">var_99 = np.percentile(total_losses, </span><span class="s3">99</span><span class="s0">)</span>
+<span class="s0">max_loss = total_losses.max()</span>
+<span class="s0">min_loss = total_losses.min()</span>
+
+<span class="s0">print(</span><span class="s4">f&quot;</span><span class="s5">{</span><span class="s4">'Metric'</span><span class="s5">:</span><span class="s4">&lt;25</span><span class="s5">} {</span><span class="s4">'Value'</span><span class="s5">:</span><span class="s4">&gt;15</span><span class="s5">}</span><span class="s4">&quot;</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s4">&quot;-&quot; </span><span class="s0">* </span><span class="s3">40</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s4">f&quot;</span><span class="s5">{</span><span class="s4">'Average Loss'</span><span class="s5">:</span><span class="s4">&lt;25</span><span class="s5">} </span><span class="s4">€</span><span class="s5">{</span><span class="s0">mean_loss</span><span class="s5">:</span><span class="s4">&gt;12,.0f</span><span class="s5">}</span><span class="s4">&quot;</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s4">f&quot;</span><span class="s5">{</span><span class="s4">'VaR (95%)'</span><span class="s5">:</span><span class="s4">&lt;25</span><span class="s5">} </span><span class="s4">€</span><span class="s5">{</span><span class="s0">var_95</span><span class="s5">:</span><span class="s4">&gt;12,.0f</span><span class="s5">}</span><span class="s4">&quot;</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s4">f&quot;</span><span class="s5">{</span><span class="s4">'VaR (99%)'</span><span class="s5">:</span><span class="s4">&lt;25</span><span class="s5">} </span><span class="s4">€</span><span class="s5">{</span><span class="s0">var_99</span><span class="s5">:</span><span class="s4">&gt;12,.0f</span><span class="s5">}</span><span class="s4">&quot;</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s4">f&quot;</span><span class="s5">{</span><span class="s4">'Maximum Loss'</span><span class="s5">:</span><span class="s4">&lt;25</span><span class="s5">} </span><span class="s4">€</span><span class="s5">{</span><span class="s0">max_loss</span><span class="s5">:</span><span class="s4">&gt;12,.0f</span><span class="s5">}</span><span class="s4">&quot;</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s4">f&quot;</span><span class="s5">{</span><span class="s4">'Minimum Loss'</span><span class="s5">:</span><span class="s4">&lt;25</span><span class="s5">} </span><span class="s4">€</span><span class="s5">{</span><span class="s0">min_loss</span><span class="s5">:</span><span class="s4">&gt;12,.0f</span><span class="s5">}</span><span class="s4">&quot;</span><span class="s0">)</span><hr class="ls0"><span class="s0">#%% md 
+## 3. Loss Distribution Chart 
+The histogram below shows how total portfolio losses are distributed 
+across 1000 simulations. The green line shows the average loss and 
+the red line shows the 95% Value at Risk (VaR). <hr class="ls0">#%% 
+plt.figure(figsize=(</span><span class="s3">12</span><span class="s0">, </span><span class="s3">6</span><span class="s0">))</span>
+<span class="s0">plt.hist(total_losses, bins=</span><span class="s3">30</span><span class="s0">, color=</span><span class="s4">'steelblue'</span><span class="s0">,</span>
+         <span class="s0">edgecolor=</span><span class="s4">'black'</span><span class="s0">, alpha=</span><span class="s3">0.85</span><span class="s0">)</span>
+<span class="s0">plt.axvline(mean_loss, color=</span><span class="s4">'green'</span><span class="s0">, linestyle=</span><span class="s4">'--'</span><span class="s0">,</span>
+            <span class="s0">linewidth=</span><span class="s3">2</span><span class="s0">, label=</span><span class="s4">f'Mean: €</span><span class="s5">{</span><span class="s0">mean_loss</span><span class="s5">:</span><span class="s4">,.0f</span><span class="s5">}</span><span class="s4">'</span><span class="s0">)</span>
+<span class="s0">plt.axvline(var_95, color=</span><span class="s4">'red'</span><span class="s0">, linestyle=</span><span class="s4">'--'</span><span class="s0">,</span>
+            <span class="s0">linewidth=</span><span class="s3">2</span><span class="s0">, label=</span><span class="s4">f'VaR 95%: €</span><span class="s5">{</span><span class="s0">var_95</span><span class="s5">:</span><span class="s4">,.0f</span><span class="s5">}</span><span class="s4">'</span><span class="s0">)</span>
+<span class="s0">plt.axvline(var_99, color=</span><span class="s4">'orange'</span><span class="s0">, linestyle=</span><span class="s4">'--'</span><span class="s0">,</span>
+            <span class="s0">linewidth=</span><span class="s3">2</span><span class="s0">, label=</span><span class="s4">f'VaR 99%: €</span><span class="s5">{</span><span class="s0">var_99</span><span class="s5">:</span><span class="s4">,.0f</span><span class="s5">}</span><span class="s4">'</span><span class="s0">)</span>
+<span class="s0">plt.title(</span><span class="s4">'Portfolio Loss Distribution (1000 Simulations)'</span><span class="s0">,</span>
+          <span class="s0">fontsize=</span><span class="s3">14</span><span class="s0">, fontweight=</span><span class="s4">'bold'</span><span class="s0">)</span>
+<span class="s0">plt.xlabel(</span><span class="s4">'Total Portfolio Loss (€)'</span><span class="s0">, fontsize=</span><span class="s3">12</span><span class="s0">)</span>
+<span class="s0">plt.ylabel(</span><span class="s4">'Frequency'</span><span class="s0">, fontsize=</span><span class="s3">12</span><span class="s0">)</span>
+<span class="s0">plt.legend(fontsize=</span><span class="s3">11</span><span class="s0">)</span>
+<span class="s0">plt.grid(</span><span class="s1">True</span><span class="s0">, alpha=</span><span class="s3">0.3</span><span class="s0">)</span>
+<span class="s0">plt.tight_layout()</span>
+<span class="s0">plt.show()</span><hr class="ls0"><span class="s0">#%% md 
+## 4. Default Probability vs Expected Loss per Firm <hr class="ls0">#%% 
+firm_names = [</span><span class="s4">f'Firm </span><span class="s5">{</span><span class="s0">i+</span><span class="s3">1</span><span class="s5">}</span><span class="s4">' </span><span class="s1">for </span><span class="s0">i </span><span class="s1">in </span><span class="s0">range(n_firms)]</span>
+<span class="s0">expected_losses = [p * loss_per_default </span><span class="s1">for </span><span class="s0">p </span><span class="s1">in </span><span class="s0">default_probs]</span>
+
+<span class="s0">plt.figure(figsize=(</span><span class="s3">12</span><span class="s0">, </span><span class="s3">5</span><span class="s0">))</span>
+<span class="s0">bars = plt.bar(firm_names, expected_losses,</span>
+               <span class="s0">color=</span><span class="s4">'steelblue'</span><span class="s0">, edgecolor=</span><span class="s4">'black'</span><span class="s0">, alpha=</span><span class="s3">0.85</span><span class="s0">)</span>
+<span class="s0">plt.title(</span><span class="s4">'Expected Loss per Firm'</span><span class="s0">, fontsize=</span><span class="s3">14</span><span class="s0">, fontweight=</span><span class="s4">'bold'</span><span class="s0">)</span>
+<span class="s0">plt.xlabel(</span><span class="s4">'Firm'</span><span class="s0">, fontsize=</span><span class="s3">12</span><span class="s0">)</span>
+<span class="s0">plt.ylabel(</span><span class="s4">'Expected Loss (€)'</span><span class="s0">, fontsize=</span><span class="s3">12</span><span class="s0">)</span>
+<span class="s0">plt.grid(</span><span class="s1">True</span><span class="s0">, alpha=</span><span class="s3">0.3</span><span class="s0">, axis=</span><span class="s4">'y'</span><span class="s0">)</span>
+
+<span class="s2"># Add value labels on top of each bar</span>
+<span class="s1">for </span><span class="s0">bar, val </span><span class="s1">in </span><span class="s0">zip(bars, expected_losses):</span>
+    <span class="s0">plt.text(bar.get_x() + bar.get_width()/</span><span class="s3">2</span><span class="s0">,</span>
+             <span class="s0">bar.get_height() + </span><span class="s3">100</span><span class="s0">,</span>
+             <span class="s4">f'€</span><span class="s5">{</span><span class="s0">val</span><span class="s5">:</span><span class="s4">,.0f</span><span class="s5">}</span><span class="s4">'</span><span class="s0">, ha=</span><span class="s4">'center'</span><span class="s0">, fontsize=</span><span class="s3">9</span><span class="s0">)</span>
+
+<span class="s0">plt.tight_layout()</span>
+<span class="s0">plt.show()</span><hr class="ls0"><span class="s0">#%% md 
+## 5. Conclusion 
+ 
+Key findings from the simulation: 
+ 
+- The **average portfolio loss** across 1000 scenarios is approximately €137,500 
+- In the **worst 5% of scenarios** (VaR 95%), losses exceed €250,000 
+- In the **worst 1% of scenarios** (VaR 99%), losses exceed €350,000 
+- Firm 10 carries the **highest individual risk** with a 10% default probability 
+ 
+### Recommendation 
+The bank should hold capital reserves of at least **€250,000** (VaR 95%) 
+to absorb potential losses in stress scenarios. This connects directly 
+to regulatory capital requirements under Basel III framework.</span></pre>
+</body>
+</html>
