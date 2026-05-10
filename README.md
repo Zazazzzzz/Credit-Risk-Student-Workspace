@@ -19,11 +19,9 @@ The goal is not perfection, but practice.
 ## Tasks in the week
 
 
-* Task3 in the Statistic folder
+* Task1 in the Credit Risk folder
 
-* Page 45 on the slides
-
-* Page 63 on the slides
+* Page 86 on the slides
 
 
 
