@@ -1,3 +1,32 @@
+# ---------------------------------------------------------------
+# Script Name: Default Number Distributions under Independent and
+#              Correlated Defaults
+# Author: Hongyi Shen
+#
+# Description:
+# This script studies the distribution of the number of defaults
+# in a homogeneous credit portfolio under two settings:
+#
+# 1. Independent defaults:
+#    Each obligor defaults independently with the same default
+#    probability.
+#
+# 2. Correlated defaults:
+#    Defaults are generated under a Gaussian one-factor model,
+#    where each obligor's latent credit variable depends on a
+#    common systematic factor and an idiosyncratic component.
+#
+# The script first simulates default counts and visualizes their
+# distributions using histograms. It then compares the probability
+# of observing different numbers of defaults:
+# - theoretically for the independent case using the binomial PMF,
+# - empirically for the correlated case using simulation output.
+#
+# The purpose is to illustrate how dependence between obligors
+# changes the shape of the default distribution and increases the
+# likelihood of extreme default outcomes.
+# ---------------------------------------------------------------
+
 # simulation of loss distributions of independent and dependent defaults in a homogeneous portfolio
 import numpy as np
 import matplotlib.pyplot as plt
