@@ -26,11 +26,29 @@ for _ in range(N): #reapeat for 2000 times the portfolio simulation
 
 defaults = np.array(defaults)
 
+values, counts = np.unique(defaults, return_counts=True)
 
-plt.figure()
-plt.hist(defaults, bins=30, color='blue',edgecolor='red')
+pmf = counts / N
+
+# Histogram
+plt.hist(defaults,
+         bins=30,
+         density=True,
+         alpha=0.6,
+         edgecolor='black',
+         label='Histogram')
+# PMF
+plt.plot(values,
+         pmf,
+         'o-',
+         linewidth=2,
+         label='Estimated PMF')
+
 plt.xlabel("Number of Defaults")
-plt.ylabel("Frequency")
-plt.title("Distribution of Defaults")
+plt.ylabel("Proba")
+plt.title("Portfolio Defaults")
 plt.grid(True, alpha=0.3)
+plt.legend()
+
 plt.show()
+
