@@ -47,6 +47,7 @@ plt.axvline(
     linestyle="--",
     label=f"Mean = {mean_return:.4f}"
 )
+# add the vertical line
 
 plt.axvline(quantile_5, linestyle="--", linewidth=2,
             label=f"5% Quantile (VaR) = {quantile_5:.4f}")
@@ -64,7 +65,7 @@ returns_df = returns_df.rename(columns={"returns_df": "Return"})
 
 mean_return = returns_df["Return"].mean()
 quantile_5 = returns_df["Return"].quantile(0.05)
-VaR_95 = -quantile_5  #the number should be positive
+VaR_95 = -quantile_5  #Value at Risk is loss
 
 print(f"Mean Return: {mean_return:.4f}")
 print(f"5% Quantile: {quantile_5:.4f}")
