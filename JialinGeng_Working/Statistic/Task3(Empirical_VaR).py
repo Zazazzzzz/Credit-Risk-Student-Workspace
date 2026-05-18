@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 # --------------------------------------------
 # Load raw data
 # --------------------------------------------
-file_path = "./EFM Asia daily.xlsx"
+file_path = "./Task3(EFM Asia daily).xlsx"
 raw = pd.read_excel(file_path, engine="openpyxl", header=None)
 
 # --------------------------------------------

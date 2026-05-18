@@ -31,9 +31,9 @@
 #
 # Reflect:
 # - Why might a very low return be important in credit risk or firm performance?
-# Economic Meaning: In credit risk, this is often viewed as a "Distress Barrier." If a firm's returns fall below this point, it may lack the cash flow to service debt.
+# Because it may trigger default, bankruptcy or lower than the minimum expectations of investors.
 # - What does the probability P(X <= d) mean economically?
-# This represents the Probability of Default or the probability of a critical performance failure.
+# It means the risk that the rate of return is lower than the critical value, that is, "tail risk" or default probability.
 #
 # --------------------------------------------------
 # Step 3: Standardize the threshold
@@ -45,9 +45,13 @@
 #
 # Reflect:
 # - Why do we subtract mu?
+# In order to move the center of distribution to 0 and eliminate the influence of the mean
 # - Why do we divide by sigma?
+# In order to scale the distribution according to the fluctuation rate, the unit becomes "the number of standard deviations"
 # - What information is removed by standardization?
+# Remove the original unit of measurement and specific mean/standard deviation order.
 # - What information is preserved?
+# The relative position of the observation value in the distribution and the probability of its occurrence are retained.
 #
 # --------------------------------------------------
 # Step 4: Build the original density
@@ -58,8 +62,11 @@
 #
 # Reflect:
 # - What does the PDF describe?
+# Describe the relative possibility of a variable near a specific value
 # - Is pdf_x a probability?
+# No, it is probability density. Only the area after integrating an interval is the probability.
 # - How is the PDF related to the histogram of simulated returns?
+# When the sample size tends to be infinite and the group spacing tends to zero, the shape of the histogram will converge to the PDF curve.
 #
 # --------------------------------------------------
 # Step 5: Build the standardized density
@@ -70,7 +77,9 @@
 #
 # Reflect:
 # - Why does the standardized variable always follow N(0,1)?
+# This is the result of mathematical construction: the mean is shifted to 0 and the standard deviation is compressed to 1.
 # - Why is it useful to move different firms to the same scale?
+# It is convenient to directly compare the relative risk levels under different volatility and mean backgrounds.
 #
 # --------------------------------------------------
 # Step 6: Compute the probability to the left of the threshold
@@ -82,7 +91,9 @@
 #
 # Reflect:
 # - What does this shaded left-tail probability represent?
+# Represents the cumulative probability of an event equal to or less than the threshold d
 # - Why is this a probability, while the PDF height is not?
+# Probability is the integral/accumulation on the interval, while PDF only represents the point density.
 #
 # --------------------------------------------------
 # Step 7: Plot the original distribution
@@ -95,8 +106,11 @@
 #
 # Reflect:
 # - Where is the risky region in the plot?
+# The left tail
 # - What happens to P(X <= d) if d moves further left?
+# The probability will be reduced, and the risk seems to be lower.
 # - What happens if mu increases?
+# If the distribution moves to the right, the risk probability under a given d will be reduced.
 #
 # --------------------------------------------------
 # Step 8: Plot the standardized distribution
@@ -109,7 +123,9 @@
 #
 # Reflect:
 # - Compare the shaded area in both plots. What do you notice?
+ The area is exactly the same.
 # - Why does the probability remain the same after standardization?
+# Because standardization is a linear transformation, it only changes the unit of the coordinate axis and does not change the relative probability structure.
 #
 # --------------------------------------------------
 # Step 9: Interpret the result
@@ -122,8 +138,11 @@
 #
 # Reflect:
 # - Why are these two probabilities equal?
+# Because z_d exactly corresponds to the position of d in the standard distribution.
 # - What changed: the probability, or only the scale?
+# Only the scale has changed.
 # - Why is this useful when comparing different companies with different means and volatilities?
+# The function of standardization (Z-score) is to eliminate the interference of scale and background, so that you can fairly compare the real ability of different companies to outperform their own industry averages under the same "standard scale", rather than just the size of the absolute value.
 #
 # --------------------------------------------------
 # Final takeaway
