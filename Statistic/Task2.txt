@@ -1,0 +1,69 @@
+# ============================================
+# Task: Understanding Correlation through Simulation
+# ============================================
+
+# Objective:
+# Use simulation to understand how correlation affects the joint behavior
+# of two random variables, while their individual distributions remain unchanged.
+
+
+# --------------------------------------------------
+# Task 1: Simulate Data
+# --------------------------------------------------
+# - Generate two datasets from a bivariate normal distribution:
+#     Case A: correlation = 0
+#     Case B: correlation = 0.5
+#
+# - Use:
+#     mean = [0, 0]
+#     variance = 1 for both variables
+#     sample size n = 1000
+#
+# - Hint:
+#     Use np.random.multivariate_normal(mean, cov, size=n)
+
+
+# --------------------------------------------------
+# Task 2: Visualization
+# --------------------------------------------------
+# - Create a 1x2 subplot (side-by-side plots)
+# - Plot scatter plots for both cases
+#
+# - Make sure:
+#     * both plots use the same axis scale (sharex=True, sharey=True)
+#     * add titles, axis labels, and grid
+#
+# - Question to think about while plotting:
+#     * Do the two plots look different?
+
+
+# --------------------------------------------------
+# Task 3: Interpretation Questions
+# --------------------------------------------------
+# Answer the following in a few sentences:
+
+# 1. Independence (correlation = 0)
+#    - What does the scatter plot look like?
+#    - Does knowing X help you predict Y?
+
+# 2. Positive correlation (correlation = 0.5)
+#    - How does the shape of the scatter plot change?
+#    - Do the points follow a visible direction or pattern?
+
+# 3. Role of correlation
+#    - Mean and variance are the same in both cases:
+#         What actually changes?
+#    - Does correlation affect individual distributions or joint behavior?
+
+
+# --------------------------------------------------
+# Task 4: Extension (Optional)
+# --------------------------------------------------
+# - Try different correlations:
+#     rho = -0.5
+#     rho = 0.9
+#
+# - Plot again and observe:
+#     * How does the shape change?
+#     * How strong can the dependence become?
+

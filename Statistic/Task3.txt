@@ -1,0 +1,75 @@
+# ============================================
+# Task: Return Distribution and Value at Risk (VaR)
+# ============================================
+
+# Objective:
+# Use real financial data to explore the distribution of returns
+# and compute the 95% Value at Risk (VaR).
+
+# --------------------------------------------------
+# Task 1: Load and Prepare Data
+# --------------------------------------------------
+# - Load the dataset (EFM Asia daily index levels).
+# - Identify the price column.
+# - Convert the date column to datetime.
+# - Sort the data by date.
+#
+# - Compute daily returns:
+#     Return_t = (Price_t / Price_{t-1}) - 1
+#
+# - Store the result in a DataFrame called `returns_df`.
+
+
+# --------------------------------------------------
+# Task 2: Plot the Return Distribution
+# --------------------------------------------------
+# - Plot a histogram of daily returns.
+# - Choose a reasonable number of bins (e.g., 30–50).
+#
+# - Add vertical lines for:
+#     1. Mean return
+#     2. 5% quantile (this corresponds to 95% VaR)
+#
+# - Label axes clearly:
+#     x-axis: Return
+#     y-axis: Frequency
+#
+# - Add a title and legend.
+
+
+# --------------------------------------------------
+# Task 3: Compute Risk Measures
+# --------------------------------------------------
+# - Compute:
+#
+#     mean_return = returns_df["Return"].mean()
+#     quantile_5 = returns_df["Return"].quantile(0.05)
+#     VaR_95 = -quantile_5
+#
+# - Print all three values.
+#
+# Interpretation:
+# VaR should be reported as a positive number representing loss.
+
+
+# --------------------------------------------------
+# Task 4: Interpretation Questions
+# --------------------------------------------------
+# Answer the following:
+
+# 1. Distribution shape
+#    - Is the return distribution symmetric?
+#    - Do you observe fat tails or extreme values?
+
+# 2. Mean vs risk
+#    - Compare the mean return to the VaR.
+#    - What does this tell you about average vs extreme outcomes?
+
+# 3. VaR interpretation
+#    - Explain in words:
+#      “What does a 95% VaR of X% mean?”
+
+# 4. Tail behavior
+#    - Look at the left tail (loss side).
+#    - Are extreme losses frequent or rare?
+

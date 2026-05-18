@@ -1,0 +1,90 @@
+# ============================================================
+# Task: Two Regional Market Factors and Default Clustering
+# ============================================================
+#
+# This task illustrates how correlation between market factors can
+# create dependence between default events in a credit portfolio.
+#
+# You are given two monthly regional equity index series:
+#
+#   1. Emerging Markets Asia
+#   2. Emerging Markets Europe and Middle East
+#
+# The portfolio contains 10 companies:
+#
+#   - 5 companies are assumed to belong to the Asia region
+#   - 5 companies are assumed to belong to the Europe/Middle East region
+#
+# The goal is to simulate the number of defaults in this portfolio
+# using a Gaussian threshold model with two correlated regional
+# systematic factors.
+#
+# Complete the following steps:
+#
+#   Step 1:
+#   Load the two regional equity index datasets from Excel files.
+#
+#   Step 2:
+#   Clean the price data and compute monthly log returns for both
+#   index series.
+#
+#   Step 3:
+#   Merge the two return series by date so that only common monthly
+#   observations are used.
+#
+#   Step 4:
+#   Estimate the empirical correlation between the two regional
+#   market return series.
+#
+#   Step 5:
+#   Simulate two standard normal regional market factors:
+#
+#       F_asia      ~ N(0, 1)
+#       F_europe_me ~ N(0, 1)
+#
+#   The two factors should be simulated with correlation equal to the
+#   empirical correlation estimated from the historical market data.
+#
+#   Step 6:
+#   Assign each company to its own regional factor:
+#
+#       Companies 1-5:   Asia factor
+#       Companies 6-10:  Europe/Middle East factor
+#
+#   Step 7:
+#   For each company, simulate the creditworthiness variable:
+#
+#       X_i = rho * F_region(i) + sqrt(1 - rho^2) * epsilon_i
+#
+#   where:
+#
+#       X_i          = creditworthiness variable of company i
+#       F_region(i) = regional systematic factor assigned to company i
+#       epsilon_i   = company-specific shock
+#       rho         = sensitivity to systematic risk
+#
+#   Use the following assumptions:
+#
+#       Number of companies:        10
+#       Asia companies:             5
+#       Europe/ME companies:        5
+#       Default probability:        5%
+#       Systematic sensitivity rho: 0.5
+#       Number of simulations:      10,000
+#
+#   Step 8:
+#   Convert the default probability into a default threshold:
+#
+#       default threshold = Phi^{-1}(p)
+#
+#   A company defaults if:
+#
+#       X_i <= Phi^{-1}(p)
+#
+#   Step 9:
+#   Count the number of defaulted companies in each simulation.
+#
+#   Step 10:
+#   Plot a histogram of the simulated number of defaults.
+#
+# ============================================================
