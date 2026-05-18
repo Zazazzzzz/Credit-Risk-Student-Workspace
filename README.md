@@ -19,9 +19,7 @@ The goal is not perfection, but practice.
 ## Tasks in the week
 
 
-* Task1 in the Credit Risk folder
-
-* Page 86 on the slides
+* Beta-binomial Simulation
 
 
 
