@@ -1,0 +1,29 @@
+# ============================================================
+# Task: Simulation and Analytical Credit Portfolio Risk
+# ============================================================
+#
+# Use the given portfolio 1 and 2 of 10 obligors to estimate portfolio credit risk
+# under a one-factor Gaussian threshold model.
+#
+# Step 1: Map each credit rating to a one-year default probability p.
+# Step 2: Convert each p into a default threshold d = Phi^{-1}(p).
+# Step 3: Simulate correlated defaults
+# Step 4: Compute the simulated portfolio loss:
+#         L = sum_i exposure_i * LGD_i * Y_i
+# Step 5: Calculate VaR and ES from the simulated loss distribution.
+# Step 6: Compute the analytical conditional expected loss function l(F).
+# Step 7: Calculate analytical VaR and ES from l(F).
+# Step 8: Plot both the simulated loss distribution.
+# Step 9: Change rho to "rho": [0.5, 0.6, 0.5, 0.5, 0.5, 0.6, 0.6, 0.6, 0.7, 0.7] and redo Step 1 to Step 8.
+#
+# Discussion:
+# Compare the simulation-based and analytical results. In particular, explain:
+#
+#   - how the rating-based default probability p affects expected loss;
+#   - how rho affects default dependence and tail risk;
+#   - why changing rho has little effect on expected loss but can strongly
+#     affect VaR and ES in the analytical case;
+#   - why the VaR and ES different in simulation case and analytical case;
+#   - why a large exposure, such as CO2, can dominate portfolio tail risk.
+#
+# ============================================================
