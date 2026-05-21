@@ -59,17 +59,24 @@
 
 # 1. Distribution shape
 #    - Is the return distribution symmetric?
+# No
 #    - Do you observe fat tails or extreme values?
+# Yes
 
 # 2. Mean vs risk
 #    - Compare the mean return to the VaR.
+# Mean daily return: 0.02%  95% VaR: 2.48%
 #    - What does this tell you about average vs extreme outcomes?
+# This shows that in the "vast majority of normal trading days", the market changes are mild and small (fluctuating up and down around the average). However, average performance does not cover up extreme risks. Once hit by the market, extreme potential losses (VaR) will far outweigh the average return during the day.
 
 # 3. VaR interpretation
 #    - Explain in words:
 #      “What does a 95% VaR of X% mean?”
+# "In the next trading day, there is a 95% chance that the maximum potential loss suffered by the asset portfolio will not exceed X%. On the other hand, there is also an extreme probability of 5% that a day's loss will be equal to or more than X%.
 
 # 4. Tail behavior
 #    - Look at the left tail (loss side).
 #    - Are extreme losses frequent or rare?
+# In daily observations, extreme losses are rare overall, but from the perspective of statistics and risk management, it shows obvious "fat tail" characteristics, which means that the actual frequency of extreme losses is higher than imagined.
+# In the daily history of the asset, extreme losses are rare overall (accounting for only about 5% of the trading days). However, the left tail of the distribution is very long, and there are still data points in the extreme range of -4% to -6%. This proves the classic "peak and thick tail" characteristic of financial data - although extreme plummets do not often occur, the actual frequency and severity of their occurrence are much higher than those predicted by ordinary statistical models.
 

@@ -17,6 +17,16 @@ import matplotlib.pyplot as plt
 # --------------------------------------------
 file_path = "./Task3(EFM Asia daily).xlsx"
 raw = pd.read_excel(file_path, engine="openpyxl", header=None)
+# pd.read_excel(...)
+# 作用： 调用 Pandas 的读取 Excel 文件函数。
+# file_path
+# 作用： 传入文件路径。它是一个变量，里面存放着你要读取的 Excel 文件的具体位置（例如："C:/Users/Desktop/data.xlsx" 或 "data.xlsx"）。
+# engine="openpyxl"
+# 作用： 显式指定底层解析引擎为 openpyxl。
+# 为什么写： openpyxl 是 Python 处理现代 Excel 文件（.xlsx 格式）最稳健的库。虽然 Pandas 通常会自动选择引擎，但显式写出来可以避免因环境里装了多个库（如老旧的 xlrd）而导致版本冲突，或者在某些特定环境下确保代码的跨平台兼容性。
+# header=None
+# 作用： 告诉 Pandas “这个表格没有列名（表头），请不要把第一行当作列名”。
+# 结果： Pandas 会把 Excel 的第一行也当作纯粹的数据读进来，并自动用数字 0, 1, 2, 3... 作为临时列名。
 
 # --------------------------------------------
 # Extract relevant data
@@ -75,7 +85,7 @@ plt.axvline(mean_return, linestyle="--", linewidth=2,
 plt.axvline(quantile_5, linestyle="--", linewidth=2,
             label=f"5% Quantile = {quantile_5:.2%}")
 
-plt.axvline(-VaR_95, linestyle=":", linewidth=2,
+plt.axvline(-VaR_95, linestyle=":", color = "red", linewidth=2,
             label=f"VaR 95% = {VaR_95:.2%}")
 
 plt.xlabel("Daily Return")
