@@ -25,9 +25,11 @@ The goal is not perfection, but practice.
 Please submit your work as follows:
 
 
-* Create a folder named YourName_Final in your branch containing: **your code file(s)**, **your report (PDF)**, **a results subfolder**
+* Create a folder named **YourName_Final** in your branch containing: **code file(s)**, **report (PDF)**, **a results subfolder**
 
 * As a contingency, **email the zipped folder** to hongyi.shen@finance.uni-freiburg.de
+
+* Please submit before **4th, June**
 
 
 ---
