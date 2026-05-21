@@ -16,11 +16,18 @@ The goal is not perfection, but practice.
 
 
 
-## Tasks in the week
+## Final Assignment
 
 
-* Beta-binomial Simulation
 
+Please submit your work as follows:
+
+
+* Create a folder named **YourName_Final** in your branch containing: **code file(s)**, **report (PDF)**, **a results subfolder**
+
+* As a contingency, **email the zipped folder** to hongyi.shen@finance.uni-freiburg.de
+
+* Please submit before **4th, June**
 
 
 ---
