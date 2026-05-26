@@ -32,16 +32,24 @@ df_RGDPG = df_RGDPG.replace('no data', np.nan)   # .replace('no data', np.nan): 
 # 3. Rename column
 df_RGDPG.rename(columns={'Real GDP growth (Annual percent change)': 'country'}, inplace=True)
 
+# .rename(columns={...})：将原本名为 'Real GDP growth (Annual percent change)' 的列重命名为更简短的 'country'。
+# inplace=True：表示直接修改原本的 df_RGDPG 数据框，而不需要重新赋值给一个新变量。
+
 # 4. Reshape from wide to long format
 df_RGDPG_long = pd.melt(df_RGDPG,
                         id_vars='country', # column to keep as identifier
                         # value_vars=[],       # column(s) to unpivot    （留空默认转换除 id_vars 外的所有列）
-                        var_name='year',   # name of the new column indicating variable names
-                        value_name='Real GDP growth (Annual percent change)') # name of the new column holding values
+                        # 含义： “需要被转换的列”。
+                        # 解释： 代码里把这一行注释掉了（没启用）。正如你代码注释中所写：如果不写这个参数，Pandas 会默认把除了 id_vars（即 country）以外的所有列，全部拿来转换。
+                        var_name='year',   # name of the new column indicating variable names   含义： “原来那些‘列名’变成新的一列后，那一列叫什么名字？”
+                        value_name='Real GDP growth (Annual percent change)') # name of the new column holding values   含义： “原来那些格子里的‘具体数值’变成新的一列后，那一列叫什么名字？”
 
 # 5. Sort and remove unwanted countries
-df_RGDPG_long.sort_values(by=['country', 'year'], inplace=True)
+df_RGDPG_long.sort_values(by=['country', 'year'], inplace=True)   # .sort_values(by=['country', 'year'], ...)：将数据先按照国家字母顺序（A-Z）排序，同一个国家内再按照年份先后顺序（从小到大）排序，确保时间序列的连续性。
 df_RGDPG_long = df_RGDPG_long[df_RGDPG_long['country'] != 'West Bank and Gaza']
+# df_RGDPG_long['country'] != 'West Bank and Gaza'：筛选出国家名称不等于 'West Bank and Gaza' 的所有行。
+# 外面嵌套的 df_RGDPG_long[...]：应用这个条件，过滤掉该地区的数据。
+
 
 # 6. Convert year and value to proper types
 df_RGDPG_long['year'] = pd.to_numeric(df_RGDPG_long['year'], errors='coerce')
@@ -59,6 +67,9 @@ df_RGDPG_long['avg_growth_country'] = df_RGDPG_long.groupby('country')['Real GDP
 # Each group now contains all the rows for a specific country
 # transform('mean'): computes the mean for each group (country), returns a Series with the same length as the original DataFrame.
 # It assigns to each row the mean GDP growth of that row’s country.
+# transform 的特殊之处：如果一个国家在数据集中有 10 年的数据（也就是 10 行），.mean() 只会返回 1 个平均值（数据行数变少了）。而 transform 会把算出来的这 1 个平均值，复制 10 次，填满这 10 行。
+# 效果：它保持了原始数据框的行数没有任何改变，非常方便直接拼接到原表上。
+
 
 # 8. Select two countries
 countries = ['Germany', 'United States']
@@ -69,10 +80,11 @@ df_selected = df_RGDPG_long[df_RGDPG_long['country'].isin(countries)]
 # This checks for each row: "Is this country in the list (or set, or Series) called countries?"
 # The result is a Boolean Series — True for rows where the country is in the list, False otherwise.
 # df_RGDPG_long[ ... ]
-# This is how pandas filters rows: by passing a Boolean Series.
+# This is how pandas filters rows: by passing a Boolean Series.  这是 pandas 过滤行的方法：通过传入一个布尔型 Series 来筛选数据。
 
-# [1,2,3].isin([1,2,3,4])
-# pd.Series([1,2,3]).isin([1,2,3,4])
+# [1,2,3].isin([1,2,3,4])   会直接报错（报错信息为 AttributeError），因为普通的 Python 列表根本没有 .isin() 这个方法。
+# pd.Series([1,2,3]).isin([1,2,3,4])   是正确的 Pandas 语法，它会返回一个布尔值序列（Series）。
+
 
 # 9. Calculate log change and volatility
 # First sort again to ensure time order
@@ -83,7 +95,7 @@ df_selected['log_growth'] = np.log(1 + df_selected['Real GDP growth (Annual perc
 # GDP_t = GDP_(t-1) * (1 + growth_rate)
 # ⇒ ln(GDP_t) - ln(GDP_(t-1)) = ln(1 + growth_rate)
 # df_selected['Real GDP growth (Annual percent change)'] is the annual percent change in GDP (e.g., 2.5%)
-# Dividing by 100 turns it into a proportion (e.g., 0.025)
+# Dividing by 100 turns it into a proportion (比例) (e.g., 0.025)
 # Adding 1 shifts the base to apply the log return formula correctly
 
 # 10. Calculate rolling volatility (optional)
@@ -98,6 +110,8 @@ mean = df_selected.groupby('country')['log_growth'].mean().reset_index(name='mea
 # Moves the index (which is 'country') back into a regular column.
 # Names the column of values (the standard deviations) as 'volatility'.
 
+# 此时volatility和mean都是DataFrame 表格类型数据
+
 # 11. Stack countries into one DataFrame, then pivot to wide for comparison, year as the index, countries as the column
 # - Set 'year' as the index (rows will represent each year)
 # - Columns will be the different countries
@@ -105,6 +119,11 @@ mean = df_selected.groupby('country')['log_growth'].mean().reset_index(name='mea
 df_wide = df_selected.pivot(index='country', columns='year', values='log_growth') # to get the previous structure
 df_wide = df_selected.pivot(index='year', columns='country', values='log_growth')
 print(df_wide.head())
+
+# 这段代码展示了如何使用 Pandas 的 pivot() 函数在宽数据（Wide Format）的两种不同形态之间进行转换。
+# 通俗来说，这两行代码的核心区别在于：谁当“行索引”（Index），谁当“列名”（Columns）。
+
+
 
 # 12. Plot the trend of these two countries
 # Create a figure and axes
@@ -114,6 +133,7 @@ plt.figure(figsize=(10, 6))  # define the figure size
 # where all your subsequent plotting commands (like plt.plot(), plt.scatter(), etc.) will draw on.
 
 plt.ion()  # Enable interactive mode
+           # 解释：ion 代表 Interactive mode ON（开启交互模式）。在默认的阻塞模式下，代码必须执行到 plt.show() 才会弹出图片。开启交互模式后，任何绘图命令都会实时更新并显示在屏幕上。
 
 # plot each country's data
 plt.plot(df_wide.index, df_wide['Germany'], label='Germany', marker='o')
@@ -139,6 +159,8 @@ plt.pause(1)
 plt.show()
 plt.close()
 
+#plt.ioff()  # Turn off the interactive mode
+
 # to plot
 plt.figure(figsize=(10, 6))
 plt.plot(df_wide.index, df_wide['Germany'], label='Germany', marker='o')
@@ -152,4 +174,5 @@ plt.tight_layout()
 
 # show the plot
 plt.show()
+
 

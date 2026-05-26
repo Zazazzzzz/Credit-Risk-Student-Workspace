@@ -84,7 +84,13 @@ axes[1].set_xlabel("X")
 axes[1].grid(alpha=0.3)
 
 plt.suptitle("Mean = 0, Variance = 1: Effect of Correlation")
+# 在 Matplotlib 中，plt.suptitle() 是用来给整张画布（Figure）添加一个全局总标题（Super Title）的方法。
 plt.tight_layout(rect=[0, 0, 1, 0.95])
+# 对于你给出的代码 plt.tight_layout(rect=[0, 0, 1, 0.95])：
+# 0 (左): 子图布局从画布的最左侧开始。
+# 0 (下): 子图布局从画布的最底部开始。
+# 1 (右): 子图布局延伸到画布的最右侧。
+# 0.95 (上): 子图布局最高只到画布 95% 的高度，最顶部的 5% 空间被空了出来。
 plt.show()
 
 # --------------------------------------------------
