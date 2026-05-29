@@ -1,0 +1,199 @@
+\documentclass[12pt]{article}
+
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{natbib}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{titling}
+\usepackage{tocloft}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\setstretch{1.15}
+
+% ============================================================
+% COLORS
+% ============================================================
+
+\definecolor{darkblue}{RGB}{0,51,102}
+\definecolor{lightgray}{RGB}{240,240,240}
+
+% ============================================================
+% SECTION FORMATTING
+% ============================================================
+
+\titleformat{\section}
+{\large\bfseries}
+{\thesection.}{0.5em}{}
+
+\titleformat{\subsection}
+{\normalsize\bfseries}
+{\thesubsection}{0.5em}{}
+
+% ============================================================
+% HEADER / FOOTER
+% ============================================================
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Credit Portfolio Risk Analysis}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ============================================================
+% TABLE OF CONTENTS STYLE
+% ============================================================
+
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+% ============================================================
+% TITLE PAGE
+% ============================================================
+
+\title{
+    \vspace{4cm}
+    {\Huge \bfseries Credit Portfolio Risk Analysis} \\
+    \vspace{1.5cm}
+    {\Large Final Assignment Report} \\
+    \vspace{2cm}
+}
+
+\author{
+    \Large Student Name \\
+    \vspace{0.5cm}
+    Course Name \\
+    Instructor Name
+}
+
+\date{\today}
+
+% ============================================================
+% DOCUMENT
+% ============================================================
+
+\begin{document}
+
+% ============================================================
+% TITLE PAGE
+% ============================================================
+
+\begin{titlepage}
+    \centering
+
+    \vspace*{2cm}
+
+    {\Huge \bfseries Credit Portfolio Risk Analysis \par}
+
+  
+
+   
+
+    \vspace{2cm}
+
+    \rule{0.8\textwidth}{0.5pt}
+    \rule{0.8\textwidth}{0.5pt}
+
+    \vspace{3cm}
+
+    \begin{center}
+    \large
+    \textbf{Student:} Student Name \\
+    \vspace{0.3cm}
+    \textbf{Portfolios:} Portfolio Name \\
+    \vspace{0.3cm}
+    \textbf{Course:} Course Name \\
+    \vspace{0.3cm}
+    \textbf{Date:} \today
+    \end{center}
+
+    \vspace{3cm}
+
+    \rule{0.8\textwidth}{0.5pt}
+    \rule{0.8\textwidth}{0.5pt}
+
+    
+
+ 
+\end{titlepage}
+
+% ============================================================
+% TABLE OF CONTENTS
+% ============================================================
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+% ============================================================
+% INTRODUCTION
+% ============================================================
+
+\section{Introduction}
+
+
+
+% ============================================================
+% DATA
+% ============================================================
+
+\section{Data}
+
+
+
+
+% ============================================================
+% METHODOLOGY
+% ============================================================
+
+\section{Methodology}
+
+\textcolor{red}{Brief literature review of the selected model(s) and discussion of their application in this analysis.}
+
+
+% ============================================================
+% RESULTS
+% ============================================================
+
+\section{Results and Discussion}
+
+
+% ============================================================
+% CONCLUSION
+% ============================================================
+
+\section{Conclusion}
+
+
+
+% ============================================================
+% REFERENCES
+% ============================================================
+
+\newpage
+
+\bibliographystyle{apalike}
+
+\begin{thebibliography}{}
+
+\bibitem{}
+Example reference.
+
+\end{thebibliography}
+
+\end{document}
+```
