@@ -1,0 +1,101 @@
+entity_code,entity_name,region,lgd,base_pd_hint,size_bucket,analyst_note,region_note,irrelevant_score,industry_norm,lgd_imputed,pd_imputed
+A-D1XPP4,Company_A_01,Europe,0.2939171849076931,0.0134891024656884,Large,manual review,legacy,80,Industry A,0,0
+A-SE4QSN,Company_A_02,Europe,0.4552824558048973,0.0256362060348401,Mid,,satellite,30,Industry A,0,0
+A-DT5C43,Company_A_03,Asia,0.4352110109163791,0.0165953522779802,Large,manual review,satellite,90,Industry A,0,0
+A-Y21HNQ,Company_A_04,Asia,0.483018608927679,0.0221541050150394,Mid,watchlist,satellite,97,Industry A,0,0
+A-OL6NCQ,Company_A_05,South America,0.44088420338761,0.0157992176151873,,watchlist,legacy,70,Industry A,0,0
+A-7PF3WZ,Company_A_06,Europe,0.3967592234169044,0.0211608066153336,,stable,,35,Industry A,0,0
+A-IYWF3H,Company_A_07,South America,0.4731295518951987,0.0231564411291927,Mid,watchlist,satellite,80,Industry A,0,0
+A-UQSUBF,Company_A_08,Europe,0.3807335107445405,0.0248413917729574,Mid,watchlist,core,78,Industry A,0,0
+A-UWUTDU,Company_A_09,South America,0.422101994220125,0.0176882410366771,,stable,satellite,46,Industry A,0,0
+A-94BI3C,Company_A_10,,0.4613940588856452,0.0234524267703388,Mid,stable,legacy,80,Industry A,0,0
+A-9XOOP3,Company_A_11,Asia,0.4209556922747943,0.0180913105300083,Mid,watchlist,legacy,51,Industry A,0,0
+A-ZF6S7F,Company_A_12,Asia,0.5032308087178229,0.02004961914008768,Small,manual review,legacy,66,Industry A,0,1
+A-VN8DME,Company_A_13,Asia,0.4819819381378749,0.0154726047231996,Small,,,97,Industry A,0,0
+A-J2JZ2Q,Company_A_14,North America,0.3739982356071535,0.0183048346204971,,stable,legacy,28,Industry A,0,0
+A-ZL3UTG,Company_A_15,Asia,0.4557703606171095,0.0173525364546809,Mid,,satellite,66,Industry A,0,0
+A-FVDXWD,Company_A_16,South America,0.4675997347177412,0.0267959378762021,Small,stable,legacy,23,Industry A,0,0
+A-YDGV2G,Company_A_17,Asia,0.4188152157475385,0.0131165692622184,Mid,,satellite,12,Industry A,0,0
+A-F8PRQ2,Company_A_18,Europe,0.6097384713353429,0.0345693123300366,Large,watchlist,core,61,Industry A,0,0
+A-TR3J8L,Company_A_19,North America,0.4010322560752153,0.019296045567918,Large,manual review,core,90,Industry A,0,0
+A-TFKTLD,Company_A_20,North America,0.4456973959345344,0.0288396495678994,Large,manual review,satellite,19,Industry A,0,0
+A-W69IIB,Company_A_21,Europe,0.6202775785948131,0.02004961914008768,Large,manual review,,38,Industry A,0,1
+A-H8WKWS,Company_A_22,South America,0.3976169843656488,0.0222303610074104,Small,stable,satellite,49,Industry A,0,0
+A-89F6D0,Company_A_23,South America,0.4405089339112094,0.0214291306980127,Small,,core,79,Industry A,0,0
+A-MXON5D,Company_A_24,North America,0.4646587549777525,0.0138776548413975,Small,,core,21,Industry A,0,0
+A-C36F0G,Company_A_25,Asia,0.361436345436521,0.0155263649052208,Large,manual review,satellite,97,Industry A,0,0
+A-RSPF7A,Company_A_26,Europe,0.4572467925521397,0.0232196939663842,Small,watchlist,satellite,55,Industry A,0,0
+A-7Y1UPH,Company_A_27,South America,0.523272203388481,0.0133680364113021,Small,,satellite,21,Industry A,0,0
+A-U7CO9K,Company_A_28,Europe,0.4930492349603141,0.0266869905372137,Small,stable,,93,Industry A,0,0
+A-RAVTFW,Company_A_29,South America,0.4572391825302299,0.0211411416506945,Large,watchlist,core,63,Industry A,0,0
+A-G702PQ,Company_A_30,North America,0.46010643814755675,0.0260292681044411,Large,,satellite,81,Industry A,1,0
+A-QIMT1V,Company_A_31,South America,0.6268833568473738,0.0173528028631696,Mid,,,48,Industry A,0,0
+A-EX85JQ,Company_A_32,North America,0.3470061934980775,0.0145160721077268,Large,watchlist,,19,Industry A,0,0
+A-5CRVMF,Company_A_33,Europe,0.371051433725741,0.0187736107702894,Large,,legacy,24,Industry A,0,0
+A-FKUFQE,Company_A_34,North America,0.4286890007992836,0.0211608494481312,Small,watchlist,satellite,63,Industry A,0,0
+A-SY2O3L,Company_A_35,South America,0.4500067514473131,0.02004961914008768,Small,manual review,satellite,26,Industry A,0,1
+A-6IIIXU,Company_A_36,,0.3889554232244186,0.0144379426400829,Large,stable,core,14,Industry A,0,0
+A-O7YD44,Company_A_37,South America,0.3611655452468417,0.0176423759627502,Large,,legacy,67,Industry A,0,0
+A-W20E3T,Company_A_38,Asia,0.5677193578394526,0.0071667077953435,Mid,manual review,legacy,67,Industry A,0,0
+A-IJCFPR,Company_A_39,Europe,0.5881880171331348,0.0123306929754193,Mid,stable,legacy,39,Industry A,0,0
+A-PNGYIK,Company_A_40,South America,0.4966124193590165,0.0286615580270497,Small,,satellite,58,Industry A,0,0
+A-84RXH2,Company_A_41,North America,0.4553236652687364,0.0165128808834986,Mid,manual review,core,28,Industry A,0,0
+A-VZS47E,Company_A_42,South America,0.5100695190985008,0.029103230788234,Small,manual review,legacy,94,Industry A,0,0
+A-0E88G2,Company_A_43,Asia,0.5010027048718158,0.0165053478571062,Large,manual review,core,32,Industry A,0,0
+A-ZVBDSW,Company_A_44,Europe,0.5424249628885357,0.0230438073611222,Mid,watchlist,legacy,57,Industry A,0,0
+A-0172SR,Company_A_45,Europe,0.4027117259847115,0.0229545316139667,Small,manual review,legacy,17,Industry A,0,0
+A-RX0P71,Company_A_46,Europe,0.5354777244791231,0.0211643901006858,Large,manual review,legacy,34,Industry A,0,0
+A-2NTLLF,Company_A_47,South America,0.5299859397528236,0.0147073195901079,,watchlist,core,75,Industry A,0,0
+A-GT87M2,Company_A_48,North America,0.46010643814755675,0.0266448029521849,Mid,stable,,95,Industry A,1,0
+A-PEJ45W,Company_A_49,Europe,0.46010643814755675,0.0177115028452158,Small,watchlist,core,50,Industry A,1,0
+A-03PK8Q,Company_A_50,Asia,0.4851709284813595,0.0226209392140638,Large,stable,legacy,19,Industry A,0,0
+B-O9B5YK,Company_B_01,South America,0.570195362622127,0.0359676900244107,Small,,legacy,90,Industry B,0,0
+B-5BIIQF,Company_B_02,South America,0.48774817361894096,0.034891655172616075,Mid,,,13,Industry B,1,1
+B-AAFB3V,Company_B_03,South America,0.3517814602557179,0.0186646871610618,Small,,legacy,82,Industry B,0,0
+B-87E14Z,Company_B_04,South America,0.493086206527386,0.0444751012269857,Mid,,core,86,Industry B,0,0
+B-QF30BG,Company_B_05,Europe,0.5803585019378602,0.0470453888181618,,stable,legacy,14,Industry B,0,0
+B-CWABH5,Company_B_06,Asia,0.5928296991568485,0.0307649950103388,Small,manual review,satellite,98,Industry B,0,0
+B-VQT2JW,Company_B_07,South America,0.5361921853928844,0.0442446315886971,Mid,manual review,satellite,62,Industry B,0,0
+B-TZJXP7,Company_B_08,Europe,0.4868862469796655,0.037441431258324,Mid,watchlist,core,20,Industry B,0,0
+B-9E8KDK,Company_B_09,North America,0.5333070372618255,0.034818960064323,Mid,stable,core,46,Industry B,0,0
+B-4H8VVL,Company_B_10,,0.4706808413351238,0.0485606181370066,Small,watchlist,core,61,Industry B,0,0
+B-MUVZTX,Company_B_11,North America,0.5619171116975393,0.0326251906128119,Mid,manual review,core,48,Industry B,0,0
+B-TWSM8S,Company_B_12,South America,0.5091520178173208,0.0390654396673085,Mid,manual review,legacy,56,Industry B,0,0
+B-J2ILS4,Company_B_13,Asia,0.5612485910550065,0.039659096654194,Large,stable,,15,Industry B,0,0
+B-CKUMRG,Company_B_14,North America,0.3168593915784876,0.0326507484231694,Large,stable,legacy,87,Industry B,0,0
+B-ONZFIV,Company_B_15,North America,0.2035471162158348,0.0311955314444715,Large,watchlist,satellite,79,Industry B,0,0
+B-PL1YFZ,Company_B_16,South America,0.5099477473015739,0.0343972954372526,Small,stable,,57,Industry B,0,0
+B-QFZFP4,Company_B_17,South America,0.4029850480348587,0.028786130409998,Large,,legacy,22,Industry B,0,0
+B-SQ4OLC,Company_B_18,South America,0.5258228823322695,0.0459530261516893,Small,,satellite,26,Industry B,0,0
+B-I67BWI,Company_B_19,Europe,0.4461228682382256,0.0430346886251349,Mid,stable,core,17,Industry B,0,0
+B-JI444W,Company_B_20,North America,0.4746622431051985,0.0338857059003395,Small,manual review,legacy,42,Industry B,0,0
+B-0T5M74,Company_B_21,Asia,0.5296418000808659,0.0492455131191174,Mid,stable,satellite,91,Industry B,0,0
+B-KVE4NM,Company_B_22,North America,0.448622896022981,0.0287784188073835,Mid,stable,,92,Industry B,0,0
+B-WWOGAM,Company_B_23,Asia,0.4840351692577983,0.030429586987347,,watchlist,satellite,37,Industry B,0,0
+B-FVUAOK,Company_B_24,Europe,0.5189843392837443,0.0248162426031954,Mid,manual review,,52,Industry B,0,0
+B-91X6SZ,Company_B_25,Asia,0.470622107984787,0.0274950688500119,Small,,legacy,75,Industry B,0,0
+B-3PXT8X,Company_B_26,Asia,0.3777625687460096,0.0367432528561486,Mid,,,77,Industry B,0,0
+B-WMAEKB,Company_B_27,North America,0.4479411587144589,0.0406882090142755,,,satellite,98,Industry B,0,0
+B-IOC2XD,Company_B_28,Europe,0.4363384716897764,0.0387879212756317,Large,manual review,core,13,Industry B,0,0
+B-BN8BND,Company_B_29,South America,0.357626556460094,0.0381242550328014,Large,manual review,legacy,76,Industry B,0,0
+B-O2NB6I,Company_B_30,Europe,0.4559347578430257,0.0352247537177965,Mid,manual review,satellite,70,Industry B,0,0
+B-TB1OZ6,Company_B_31,North America,0.3959413947487566,0.0181105376834935,,manual review,,86,Industry B,0,0
+B-6KZVQO,Company_B_32,Europe,0.4810076158977743,0.027206283706547,Small,stable,legacy,40,Industry B,0,0
+B-QZP3T9,Company_B_33,North America,0.4662674837931494,0.0340059774991473,Mid,stable,core,99,Industry B,0,0
+B-4Z0VCO,Company_B_34,Asia,0.6847825012956046,0.0337807908633653,Mid,,core,16,Industry B,0,0
+B-MHTAKQ,Company_B_35,South America,0.6212518836831601,0.0327334580699937,,manual review,,77,Industry B,0,0
+B-ST9KM6,Company_B_36,Asia,0.3384341660679322,0.0383744678486786,Mid,watchlist,,76,Industry B,0,0
+B-HVWXAK,Company_B_37,South America,0.5835807896314338,0.037445454357923,Large,watchlist,core,35,Industry B,0,0
+B-CUJ2V2,Company_B_38,North America,0.5625085201248153,0.0437620750599563,Mid,stable,satellite,83,Industry B,0,0
+B-Y6J2QG,Company_B_39,Europe,0.6498374440296733,0.0317881165479549,Large,manual review,,56,Industry B,0,0
+B-7PFB78,Company_B_40,North America,0.4217583666038554,0.0187575079132969,Small,watchlist,,50,Industry B,0,0
+B-JS2LBB,Company_B_41,South America,0.4943045458786471,0.0423442153500894,Mid,watchlist,satellite,28,Industry B,0,0
+B-9KROIO,Company_B_42,,0.5701663648089567,0.0277544532017155,Small,watchlist,core,55,Industry B,0,0
+B-JRBLOP,Company_B_43,North America,0.397771971835267,0.0343267474415366,Mid,,legacy,31,Industry B,0,0
+B-6R5YMI,Company_B_44,North America,0.5767317240461227,0.0270188735661163,Mid,stable,,74,Industry B,0,0
+B-GFVBLE,Company_B_45,Europe,0.515811908490511,0.0404443717235944,Small,,core,19,Industry B,0,0
+B-ZWRIDU,Company_B_46,Europe,0.48774817361894096,0.0356932437470504,Large,manual review,legacy,65,Industry B,1,0
+B-QF6194,Company_B_47,Asia,0.48774817361894096,0.0278945246598982,Mid,stable,,98,Industry B,1,0
+B-CN03FL,Company_B_48,North America,0.5442545624204053,0.0437476568693064,Mid,,legacy,38,Industry B,0,0
+B-3C5B0M,Company_B_49,Asia,0.4443808041150874,0.0260411132965198,Mid,watchlist,satellite,76,Industry B,0,0
+B-3LE6FV,Company_B_50,Europe,0.5202797276897779,0.034891655172616075,Small,watchlist,,55,Industry B,0,1
