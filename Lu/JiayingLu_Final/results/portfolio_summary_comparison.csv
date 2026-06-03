@@ -1,0 +1,15 @@
+portfolio,metric,value
+Portfolio1,total_EAD,680474565.4303722
+Portfolio1,analytical_expected_loss_amount,6078667.282897082
+Portfolio1,analytical_expected_loss_rate,0.008932982350416837
+Portfolio1,simulated_expected_loss_amount,6111691.775803357
+Portfolio1,simulated_expected_loss_rate,0.008981513911453782
+Portfolio1,mean_number_of_defaults,0.58302
+Portfolio1,max_number_of_defaults,15.0
+Portfolio2,total_EAD,766527630.0484265
+Portfolio2,analytical_expected_loss_amount,13756076.219224742
+Portfolio2,analytical_expected_loss_rate,0.017945962650238297
+Portfolio2,simulated_expected_loss_amount,13813697.088408114
+Portfolio2,simulated_expected_loss_rate,0.018021133938166605
+Portfolio2,mean_number_of_defaults,1.10163
+Portfolio2,max_number_of_defaults,26.0
