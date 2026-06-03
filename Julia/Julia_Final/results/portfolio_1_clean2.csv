@@ -1,0 +1,27 @@
+entity_code,EAD,booking_date,internal_comment,entity_name,industry,region,lgd,base_pd_hint,size_bucket,analyst_note,region_note,last_default_date,last_default_event,last_default_source
+A-FVDXWD,15791662.138349548,2025-01-01,,Company_A_16,Industry A,SouthAmerica,0.4675997347177412,0.0267959378762021,Small,stable,legacy,2025-12-31,0,manual
+A-O7YD44,33719497.892395124,2025-01-22,review,Company_A_37,Industry A,South America,0.3611655452468417,0.0176423759627502,Large,,legacy,2025-12-31,0,manual
+A-H8WKWS,36314076.04037352,2025-03-05,,Company_A_22,Industry A,South America,0.3976169843656488,0.0222303610074104,Small,stable,satellite,2025-12-31,0,system
+A-5CRVMF,14540527.40955621,2025-03-05,,Company_A_33,Industry A,Europe,0.371051433725741,0.0187736107702894,Large,,legacy,2025-12-31,0,system
+A-UQSUBF,29785514.38449223,2025-03-05,check formatting,Company_A_08,Industry A,europe,0.3807335107445405,0.0248413917729574,Mid,watchlist,core,2025-12-31,0,system
+A-03PK8Q,31179654.51333564,2025-03-26,review,Company_A_50,Industry A,Asia,0.4851709284813595,0.0226209392140638,Large,stable,legacy,2025-12-31,0,system
+A-89F6D0,8875349.051019402,2025-03-26,new,Company_A_23,Industry A,South America,0.4405089339112094,0.0214291306980127,Small,,core,2025-12-31,0,system
+A-Y21HNQ,21744172.413033728,2025-04-09,,Company_A_04,Industry A,Asia,0.483018608927679,0.0221541050150394,Mid,watchlist,satellite,2025-12-31,0,system
+A-IJCFPR,29675986.878346752,2025-04-23,new,Company_A_39,Industry A,Europe,0.5881880171331348,0.0123306929754193,Mid,stable,legacy,2025-12-31,0,system
+A-RX0P71,11131319.874960128,2025-04-23,check formatting,Company_A_46,Industry A,Europe,0.5354777244791231,0.0211643901006858,Large,manual review,legacy,2025-12-31,0,system
+A-W20E3T,26938874.397447303,2025-05-07,legacy,Company_A_38,Industry A,Asia,0.5677193578394526,0.0071667077953435,Mid,manual review,legacy,2025-12-31,0,archive
+A-7Y1UPH,10404808.080774983,2025-05-07,,Company_A_27,Industry A,South America,0.523272203388481,0.0133680364113021,Small,,satellite,2025-12-31,0,system
+A-VZS47E,10159908.371995503,2025-05-14,legacy,Company_A_42,Industry A,South America,0.5100695190985008,0.029103230788234,Small,manual review,legacy,2025-12-31,0,archive
+A-PNGYIK,21839308.56171024,2025-05-14,review,Company_A_40,Industry A,South America,0.4966124193590165,0.0286615580270497,Small,,satellite,2025-12-31,0,system
+A-ZL3UTG,31154443.006722443,2025-05-14,review,Company_A_15,Industry A,Asia,0.4557703606171095,0.0173525364546809,Mid,,satellite,2025-12-31,0,system
+A-2NTLLF,11918344.378912384,2025-05-21,check formatting,Company_A_47,Industry A,South America,0.5299859397528236,0.0147073195901079,,watchlist,core,2025-12-31,0,system
+A-SE4QSN,38461633.08329202,2025-06-18,check formatting,Company_A_02,Industry A,Europe,0.4552824558048973,0.0256362060348401,Mid,,satellite,2025-12-31,0,system
+A-RSPF7A,33527558.367656395,2025-07-16,review,Company_A_26,Industry A,Europe,0.4572467925521397,0.0232196939663842,Small,watchlist,satellite,2025-12-31,0,manual
+A-ZVBDSW,24258389.21678901,2025-09-17,,Company_A_44,Industry A,Europe,0.5424249628885357,0.0230438073611222,Mid,watchlist,legacy,2025-12-31,0,manual
+A-0E88G2,15196530.8745463,2025-09-24,review,Company_A_43,Industry A,Asia,0.5010027048718158,0.0165053478571062,Large,manual review,core,2025-12-31,0,system
+A-C36F0G,31619110.795545343,2025-10-01,check formatting,Company_A_25,Industry A,Asia,0.361436345436521,0.0155263649052208,Large,manual review,satellite,2025-12-31,0,archive
+A-FKUFQE,20688422.160971247,2025-10-08,,Company_A_34,Industry A,NorthAmerica,0.4286890007992836,0.0211608494481312,Small,watchlist,satellite,2025-12-31,0,system
+A-0172SR,7447607.101690142,2025-11-12,review,Company_A_45,Industry A,Europe,0.4027117259847115,0.0229545316139667,Small,manual review,legacy,2025-12-31,0,system
+A-9XOOP3,32377391.834372822,2025-11-26,review,Company_A_11,Industry A,Asia,0.4209556922747943,0.0180913105300083,Mid,watchlist,legacy,2025-12-31,0,system
+A-YDGV2G,35898894.811192736,2025-12-03,review,Company_A_17,Industry A,Asia,0.4188152157475385,0.0131165692622184,Mid,,satellite,2025-12-31,0,system
+A-DT5C43,13426357.492499432,2025-12-10,review,Company_A_03,Industry A,Asia,0.4352110109163791,0.0165953522779802,Large,manual review,satellite,2025-12-31,0,system
