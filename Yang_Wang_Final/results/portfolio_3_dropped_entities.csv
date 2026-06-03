@@ -1,0 +1,3 @@
+entity_code,entity_name,industry,EAD,lgd,base_pd_hint,rho_final,drop_reason
+B-TB1OZ6,Company_B_31,B,,0.3959413947487566,0.0181105376834935,0.6223319453217365,missing EAD
+B-WWOGAM,Company_B_23,B,,0.4840351692577983,0.030429586987347,0.5900903553410503,missing EAD

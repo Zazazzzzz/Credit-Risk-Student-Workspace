@@ -1,0 +1,2 @@
+portfolio,n_entities,n_simulations,Method,Expected_Loss,Standard_Deviation,VaR_99,ES_99
+portfolio_3,27,10000,Analytical Conditional Expected Loss,11806278.757025067,19601478.749723457,98352375.7579579,128834111.55129556

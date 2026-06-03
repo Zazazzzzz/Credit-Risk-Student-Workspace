@@ -1,0 +1,3 @@
+portfolio,Method,Expected_Loss,Standard_Deviation,VaR_99,ES_99
+portfolio_3,Default Indicator Simulation,12034084.718612287,23700015.5361454,116810304.94915114,146077814.46369937
+portfolio_3,Analytical Conditional Expected Loss,11806278.757025067,19601478.749723457,98352375.7579579,128834111.55129556

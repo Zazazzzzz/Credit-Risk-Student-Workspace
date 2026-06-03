@@ -1,0 +1,37 @@
+portfolio,entity_code,entity_name,industry,rho,n_obs,reason
+portfolio_3,A-0172SR,Company_A_45,A,0.45624035747058617,18,rho estimated successfully
+portfolio_3,A-0E88G2,Company_A_43,A,0.42764442069362596,52,rho estimated successfully
+portfolio_3,A-DT5C43,Company_A_03,A,0.5452204353267218,43,rho estimated successfully
+portfolio_3,A-FVDXWD,Company_A_16,A,0.4234094655556998,9,rho estimated successfully
+portfolio_3,A-OL6NCQ,Company_A_05,A,0.3161560876925229,44,rho estimated successfully
+portfolio_3,A-PEJ45W,Company_A_49,A,0.47934504578828036,67,rho estimated successfully
+portfolio_3,A-TR3J8L,Company_A_19,A,0.5329227111908909,15,rho estimated successfully
+portfolio_3,A-Y21HNQ,Company_A_04,A,0.32004965121113954,65,rho estimated successfully
+portfolio_3,B-0T5M74,Company_B_21,B,0.6625943336422524,21,rho estimated successfully
+portfolio_3,B-3C5B0M,Company_B_49,B,0.4603090885753394,57,rho estimated successfully
+portfolio_3,B-4H8VVL,Company_B_10,B,,3,not enough valid observations
+portfolio_3,B-6KZVQO,Company_B_32,B,0.6203024155378187,63,rho estimated successfully
+portfolio_3,B-7PFB78,Company_B_40,B,0.4908027896529959,52,rho estimated successfully
+portfolio_3,B-9KROIO,Company_B_42,B,0.2213059282777691,8,rho estimated successfully
+portfolio_3,B-AAFB3V,Company_B_03,B,0.30526732380519045,12,rho estimated successfully
+portfolio_3,B-FVUAOK,Company_B_24,B,0.572517608710895,46,rho estimated successfully
+portfolio_3,B-GFVBLE,Company_B_45,B,0.5881470692844544,45,rho estimated successfully
+portfolio_3,B-I67BWI,Company_B_19,B,,3,not enough valid observations
+portfolio_3,B-IOC2XD,Company_B_28,B,0.33672254948398966,30,rho estimated successfully
+portfolio_3,B-J2ILS4,Company_B_13,B,0.8338531393503555,22,rho estimated successfully
+portfolio_3,B-JI444W,Company_B_20,B,0.5739857742469835,72,rho estimated successfully
+portfolio_3,B-JRBLOP,Company_B_43,B,0.6027284293857075,29,rho estimated successfully
+portfolio_3,B-JS2LBB,Company_B_41,B,0.7640528586505416,21,rho estimated successfully
+portfolio_3,B-KVE4NM,Company_B_22,B,0.6090661828465465,40,rho estimated successfully
+portfolio_3,B-MUVZTX,Company_B_11,B,0.6143791053200791,19,rho estimated successfully
+portfolio_3,B-O2NB6I,Company_B_30,B,0.6284535633077019,65,rho estimated successfully
+portfolio_3,B-PL1YFZ,Company_B_16,B,0.6973449026504682,54,rho estimated successfully
+portfolio_3,B-QF30BG,Company_B_05,B,0.646083036962947,74,rho estimated successfully
+portfolio_3,B-QFZFP4,Company_B_17,B,0.3751838037320207,68,rho estimated successfully
+portfolio_3,B-TB1OZ6,Company_B_31,B,0.6223319453217365,30,rho estimated successfully
+portfolio_3,B-TWSM8S,Company_B_12,B,0.45368812548132925,80,rho estimated successfully
+portfolio_3,B-TZJXP7,Company_B_08,B,0.5532829778511404,55,rho estimated successfully
+portfolio_3,B-VQT2JW,Company_B_07,B,0.3874498789809708,52,rho estimated successfully
+portfolio_3,B-WMAEKB,Company_B_27,B,0.48658053108441807,55,rho estimated successfully
+portfolio_3,B-WWOGAM,Company_B_23,B,0.5900903553410503,36,rho estimated successfully
+portfolio_3,B-ZWRIDU,Company_B_46,B,0.5413767749449965,61,rho estimated successfully
