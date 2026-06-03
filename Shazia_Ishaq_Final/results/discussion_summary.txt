@@ -1,0 +1,17 @@
+CREDIT PORTFOLIO RISK ANALYSIS — RESULTS SUMMARY
+Shazia Ishaq | University of Freiburg | 2026
+100,000 Monte Carlo simulations | 99% confidence level
+
+PORTFOLIO 1 (Industry A — 30 obligors)
+  Gaussian One-Factor: EL=0.009128 Std=0.017444 VaR=0.078888 ES=0.102181
+  Beta-Bernoulli:      EL=0.009307 Std=0.013956 VaR=0.056456 ES=0.067745
+
+PORTFOLIO 2 (Industry B — 26 obligors)
+  Gaussian One-Factor: EL=0.016506 Std=0.030974 VaR=0.145372 ES=0.184874
+  Beta-Bernoulli:      EL=0.015981 Std=0.019966 VaR=0.080134 ES=0.093841
+
+KEY FINDINGS:
+1. Portfolio 2 has higher risk across all measures (higher PD and LGD)
+2. Both models agree on EL (same mean PD calibration)
+3. ES > VaR in all cases confirming heavy-tailed distributions
+4. Results support requiring more capital for Portfolio 2
