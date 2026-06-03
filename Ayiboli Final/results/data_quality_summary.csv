@@ -1,0 +1,8 @@
+dataset,raw_rows,cleaned_rows
+entities,103,100
+default_history,2015,2000
+portfolio_1,31,30
+portfolio_2,31,30
+portfolio_3,41,40
+stock_returns,78320,76078
+industry_index_returns,1566,1536
