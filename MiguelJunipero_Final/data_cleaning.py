@@ -43,7 +43,7 @@ def clean_portfolio(dir_data, file_name):
     df = pd.read_csv(path)
     df["entity_code"] = df["entity_code"].apply(clean_entity_codes)
 
-    # Fill missing EADs with portfolio 1's median
+    # Fill missing EADs with portfolio's median
     df["EAD"] = df["EAD"].fillna(df["EAD"].median())
 
     # Remove duplicates
@@ -78,6 +78,17 @@ def clean_and_merge(dir_data):
     defaults["default_event"] = defaults["default_event"].fillna(0).astype(int)
     # Drop duplicates
     defaults = defaults.drop_duplicates(subset=["date", "entity_code"], keep="first")
+
+    # Map industries to default rates
+    ent_ind_map = entities.set_index("entity_code")["industry"].to_dict()
+    defaults["industry"] = defaults["entity_code"].map(ent_ind_map).apply(clean_industries)
+
+    # Map industries to defaults file
+    ind_pd_rates = defaults.groupby("industry")["default_event"].mean().to_dict()
+    global_pd = defaults["default_event"].mean()
+
+    # Missing pd values
+    entities["base_pd_hint"] = entities["base_pd_hint"].fillna(entities["industry"].map(ind_pd_rates).fillna(global_pd))
 
     # Clean "stock_returns" file
     stocks_path = os.path.join(dir_data, "stock_returns.csv")
