@@ -1,0 +1,2145 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.29)  6 JUN 2026 00:08
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**Test.tex
+(./Test.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2026/03/07 v6.0 Page Geometry
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count283
+\Gm@cntv=\count284
+\c@Gm@tempcnt=\count285
+\Gm@bindingoffset=\dimen149
+\Gm@wd@mp=\dimen150
+\Gm@odd@mp=\dimen151
+\Gm@even@mp=\dimen152
+\Gm@layoutwidth=\dimen153
+\Gm@layoutheight=\dimen154
+\Gm@layouthoffset=\dimen155
+\Gm@layoutvoffset=\dimen156
+\Gm@dimlist=\toks18
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen157
+\Gin@req@width=\dimen158
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen159
+\lightrulewidth=\dimen160
+\cmidrulewidth=\dimen161
+\belowrulesep=\dimen162
+\belowbottomsep=\dimen163
+\aboverulesep=\dimen164
+\abovetopsep=\dimen165
+\cmidrulesep=\dimen166
+\cmidrulekern=\dimen167
+\defaultaddspace=\dimen168
+\@cmidla=\count286
+\@cmidlb=\count287
+\@aboverulesep=\dimen169
+\@belowrulesep=\dimen170
+\@thisruleclass=\count288
+\@lastruleclass=\count289
+\@thisrulewidth=\dimen171
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen172
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen173
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count290
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count291
+\leftroot@=\count292
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count293
+\DOTSCASE@=\count294
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen174
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count295
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count296
+\dotsspace@=\muskip17
+\c@parentequation=\count297
+\dspbrk@lvl=\count298
+\tag@help=\toks20
+\row@=\count299
+\column@=\count300
+\maxfields@=\count301
+\andhelp@=\toks21
+\eqnshift@=\dimen175
+\alignsep@=\dimen176
+\tagshift@=\dimen177
+\tagwidth@=\dimen178
+\totwidth@=\dimen179
+\lineht@=\dimen180
+\@envbody=\toks22
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count302
+\float@exts=\toks24
+\float@box=\box55
+\@float@everytoks=\toks25
+\@floatcapt=\box56
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip54
+\enit@outerparindent=\dimen181
+\enit@toks=\toks26
+\enit@inbox=\box57
+\enit@count@id=\count303
+\enitdp@description=\count304
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip55
+\bibsep=\skip56
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count305
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box58
+\beforetitleunit=\skip57
+\aftertitleunit=\skip58
+\ttl@plus=\dimen182
+\ttl@minus=\dimen183
+\ttl@toksa=\toks27
+\titlewidth=\dimen184
+\titlewidthlast=\dimen185
+\titlewidthfirst=\dimen186
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip59
+\f@nch@offset@elh=\skip60
+\f@nch@offset@erh=\skip61
+\f@nch@offset@olh=\skip62
+\f@nch@offset@orh=\skip63
+\f@nch@offset@elf=\skip64
+\f@nch@offset@erf=\skip65
+\f@nch@offset@olf=\skip66
+\f@nch@offset@orf=\skip67
+\f@nch@height=\skip68
+\f@nch@footalignment=\skip69
+\f@nch@widthL=\skip70
+\f@nch@widthC=\skip71
+\f@nch@widthR=\skip72
+\@temptokenb=\toks28
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/titling/titling.sty
+Package: titling 2009/09/04 v2.1d maketitle typesetting
+\thanksmarkwidth=\skip73
+\thanksmargin=\skip74
+\droptitle=\skip75
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 51.
+\cftparskip=\skip76
+\cftbeforetoctitleskip=\skip77
+\cftaftertoctitleskip=\skip78
+\cftbeforepartskip=\skip79
+\cftpartnumwidth=\skip80
+\cftpartindent=\skip81
+\cftbeforesecskip=\skip82
+\cftsecindent=\skip83
+\cftsecnumwidth=\skip84
+\cftbeforesubsecskip=\skip85
+\cftsubsecindent=\skip86
+\cftsubsecnumwidth=\skip87
+\cftbeforesubsubsecskip=\skip88
+\cftsubsubsecindent=\skip89
+\cftsubsubsecnumwidth=\skip90
+\cftbeforeparaskip=\skip91
+\cftparaindent=\skip92
+\cftparanumwidth=\skip93
+\cftbeforesubparaskip=\skip94
+\cftsubparaindent=\skip95
+\cftsubparanumwidth=\skip96
+\cftbeforeloftitleskip=\skip97
+\cftafterloftitleskip=\skip98
+\cftbeforefigskip=\skip99
+\cftfigindent=\skip100
+\cftfignumwidth=\skip101
+\c@lofdepth=\count306
+\c@lotdepth=\count307
+\cftbeforelottitleskip=\skip102
+\cftafterlottitleskip=\skip103
+\cftbeforetabskip=\skip104
+\cfttabindent=\skip105
+\cfttabnumwidth=\skip106
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count308
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count309
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen187
+\Hy@linkcounter=\count310
+\Hy@pagecounter=\count311
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/local/texlive/2026/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count312
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4201.
+Package hyperref Info: Link nesting OFF on input line 4206.
+Package hyperref Info: Hyper index ON on input line 4209.
+Package hyperref Info: Plain pages OFF on input line 4216.
+Package hyperref Info: Backreferencing OFF on input line 4221.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4468.
+\c@Hy@tempcnt=\count313
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4807.
+\XeTeXLinkMargin=\dimen188
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count314
+\Field@Width=\dimen189
+\Fld@charsize=\dimen190
+Package hyperref Info: Hyper figures OFF on input line 6084.
+Package hyperref Info: Link nesting OFF on input line 6089.
+Package hyperref Info: Hyper index ON on input line 6092.
+Package hyperref Info: backreferencing OFF on input line 6099.
+Package hyperref Info: Link coloring OFF on input line 6104.
+Package hyperref Info: Link coloring with OCG OFF on input line 6109.
+Package hyperref Info: PDF/A mode OFF on input line 6114.
+\Hy@abspage=\count315
+\c@Item=\count316
+\c@Hfootnote=\count317
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
+\Fld@listcount=\count318
+\c@bookmark@seq@number=\count319
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+84.
+)
+\Hy@SectionHShift=\skip107
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 23.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count320
+)
+(/Users/jialingeng/Desktop/Seminar-of-Credit-Risk/Credit-Risk-Student-Workspace
+/out/Test.aux)
+\openout1 = `Test.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count321
+\scratchdimen=\dimen191
+\scratchbox=\box59
+\nofMPsegments=\count322
+\nofMParguments=\count323
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count324
+\MPscratchDim=\dimen192
+\MPnumerator=\count325
+\makeMPintoPDFobject=\count326
+\everyMPtoPDFconversion=\toks30
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package hyperref Info: Link coloring ON on input line 87.
+
+(/Users/jialingeng/Desktop/Seminar-of-Credit-Risk/Credit-Risk-Student-Workspace
+/out/Test.out)
+(/Users/jialingeng/Desktop/Seminar-of-Credit-Risk/Credit-Risk-Student-Workspace
+/out/Test.out)
+\@outlinefile=\write3
+\openout3 = `Test.out'.
+
+
+
+./Test.tex:109: LaTeX Error: Unicode character 张 (U+5F20)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.109     \textbf{Student:} 张
+                               三 (Student Name) \\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:109: LaTeX Error: Unicode character 三 (U+4E09)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.109     \textbf{Student:} 张三
+                                   (Student Name) \\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:111: LaTeX Error: Unicode character 多 (U+591A)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111     \textbf{Portfolios:} 多
+                                  元化信用资产组合 (Diversified Cred...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:111: LaTeX Error: Unicode character 元 (U+5143)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111     \textbf{Portfolios:} 多元
+                                     化信用资产组合 (Diversified Cred...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:111: LaTeX Error: Unicode character 化 (U+5316)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111     \textbf{Portfolios:} 多元化
+                                        信用资产组合 (Diversified Cred...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:111: LaTeX Error: Unicode character 信 (U+4FE1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111     \textbf{Portfolios:} 多元化信
+                                           用资产组合 (Diversified Cred...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:111: LaTeX Error: Unicode character 用 (U+7528)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111     \textbf{Portfolios:} 多元化信用
+                                              资产组合 (Diversified Cred...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:111: LaTeX Error: Unicode character 资 (U+8D44)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111     \textbf{Portfolios:} 多元化信用资
+                                                 产组合 (Diversified Cred...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:111: LaTeX Error: Unicode character 产 (U+4EA7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 ...textbf{Portfolios:} 多元化信用资产
+                                                  组合 (Diversified Credit...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:111: LaTeX Error: Unicode character 组 (U+7EC4)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 ...tbf{Portfolios:} 多元化信用资产组
+                                                  合 (Diversified Credit Po...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:111: LaTeX Error: Unicode character 合 (U+5408)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 ...{Portfolios:} 多元化信用资产组合
+                                                   (Diversified Credit Portf...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:113: LaTeX Error: Unicode character 信 (U+4FE1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.113     \textbf{Course:} 信
+                              用风险管理 (Credit Risk Management) \\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:113: LaTeX Error: Unicode character 用 (U+7528)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.113     \textbf{Course:} 信用
+                                 风险管理 (Credit Risk Management) \\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:113: LaTeX Error: Unicode character 风 (U+98CE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.113     \textbf{Course:} 信用风
+                                    险管理 (Credit Risk Management) \\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:113: LaTeX Error: Unicode character 险 (U+9669)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.113     \textbf{Course:} 信用风险
+                                       管理 (Credit Risk Management) \\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:113: LaTeX Error: Unicode character 管 (U+7BA1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.113     \textbf{Course:} 信用风险管
+                                          理 (Credit Risk Management) \\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:113: LaTeX Error: Unicode character 理 (U+7406)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.113     \textbf{Course:} 信用风险管理
+                                              (Credit Risk Management) \\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[1
+
+{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(/Users/jialingeng/Desktop/Seminar-of-Credit-Risk/Credit-Risk-Student-Workspace
+/out/Test.toc)
+\tf@toc=\write4
+\openout4 = `Test.toc'.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.133 \newpage
+               [1]
+
+./Test.tex:140: LaTeX Error: Unicode character 在 (U+5728)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 在
+         现代金融体系中，信用风险是商业银行和金融机构�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 现 (U+73B0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 在现
+            代金融体系中，信用风险是商业银行和金融机构�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 代 (U+4EE3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 在现代
+               金融体系中，信用风险是商业银行和金融机构�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 金 (U+91D1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 在现代金
+                  融体系中，信用风险是商业银行和金融机构�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 融 (U+878D)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 在现代金融
+                     体系中，信用风险是商业银行和金融机构�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 体 (U+4F53)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 在现代金融体
+                        系中，信用风险是商业银行和金融机构�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 系 (U+7CFB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 在现代金融体系
+                           中，信用风险是商业银行和金融机构�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 中 (U+4E2D)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 在现代金融体系中
+                              ，信用风险是商业银行和金融机构�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character ， (U+FF0C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 在现代金融体系中，
+                                 信用风险是商业银行和金融机构�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 信 (U+4FE1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 在现代金融体系中，信
+                                    用风险是商业银行和金融机构�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 用 (U+7528)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 在现代金融体系中，信用
+                                       风险是商业银行和金融机构�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 风 (U+98CE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 在现代金融体系中，信用风
+                                          险是商业银行和金融机构�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 险 (U+9669)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 在现代金融体系中，信用风险
+                                             是商业银行和金融机构�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 是 (U+662F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 在现代金融体系中，信用风险是
+                                                商业银行和金融机构�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 商 (U+5546)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��代金融体系中，信用风险是商
+                                                  业银行和金融机构�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 业 (U+4E1A)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��金融体系中，信用风险是商业
+                                                  银行和金融机构面�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 银 (U+94F6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��融体系中，信用风险是商业银
+                                                  行和金融机构面临�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 行 (U+884C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��体系中，信用风险是商业银行
+                                                  和金融机构面临的�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 和 (U+548C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��系中，信用风险是商业银行和
+                                                  金融机构面临的最�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 金 (U+91D1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��中，信用风险是商业银行和金
+                                                  融机构面临的最核�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 融 (U+878D)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��，信用风险是商业银行和金融
+                                                  机构面临的最核心�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 机 (U+673A)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��信用风险是商业银行和金融机
+                                                  构面临的最核心风�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 构 (U+6784)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��用风险是商业银行和金融机构
+                                                  面临的最核心风险�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 面 (U+9762)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��风险是商业银行和金融机构面
+                                                  临的最核心风险之�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 临 (U+4E34)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��险是商业银行和金融机构面临
+                                                  的最核心风险之一�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 的 (U+7684)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��是商业银行和金融机构面临的
+                                                  最核心风险之一。�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 最 (U+6700)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��商业银行和金融机构面临的最
+                                                  核心风险之一。信�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 核 (U+6838)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��业银行和金融机构面临的最核
+                                                  心风险之一。信用�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 心 (U+5FC3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��银行和金融机构面临的最核心
+                                                  风险之一。信用资�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 风 (U+98CE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��行和金融机构面临的最核心风
+                                                  险之一。信用资产�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 险 (U+9669)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��和金融机构面临的最核心风险
+                                                  之一。信用资产组�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 之 (U+4E4B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��金融机构面临的最核心风险之
+                                                  一。信用资产组合�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 一 (U+4E00)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��融机构面临的最核心风险之一
+                                                  。信用资产组合风�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 。 (U+3002)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��机构面临的最核心风险之一。
+                                                  信用资产组合风险�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 信 (U+4FE1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��构面临的最核心风险之一。信
+                                                  用资产组合风险管�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 用 (U+7528)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��面临的最核心风险之一。信用
+                                                  资产组合风险管理�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 资 (U+8D44)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��临的最核心风险之一。信用资
+                                                  产组合风险管理的�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 产 (U+4EA7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��的最核心风险之一。信用资产
+                                                  组合风险管理的核�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 组 (U+7EC4)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��最核心风险之一。信用资产组
+                                                  合风险管理的核心�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 合 (U+5408)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��核心风险之一。信用资产组合
+                                                  风险管理的核心在�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 风 (U+98CE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��心风险之一。信用资产组合风
+                                                  险管理的核心在于�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 险 (U+9669)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��风险之一。信用资产组合风险
+                                                  管理的核心在于，�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 管 (U+7BA1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��险之一。信用资产组合风险管
+                                                  理的核心在于，不�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 理 (U+7406)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��之一。信用资产组合风险管理
+                                                  的核心在于，不仅�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 的 (U+7684)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��一。信用资产组合风险管理的
+                                                  核心在于，不仅要�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 核 (U+6838)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��。信用资产组合风险管理的核
+                                                  心在于，不仅要评�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 心 (U+5FC3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��信用资产组合风险管理的核心
+                                                  在于，不仅要评估�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 在 (U+5728)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��用资产组合风险管理的核心在
+                                                  于，不仅要评估单�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 于 (U+4E8E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��资产组合风险管理的核心在于
+                                                  ，不仅要评估单一�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character ， (U+FF0C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��产组合风险管理的核心在于，
+                                                  不仅要评估单一资�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 不 (U+4E0D)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��组合风险管理的核心在于，不
+                                                  仅要评估单一资产�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 仅 (U+4EC5)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��合风险管理的核心在于，不仅
+                                                  要评估单一资产的�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 要 (U+8981)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��风险管理的核心在于，不仅要
+                                                  评估单一资产的违�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 评 (U+8BC4)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��险管理的核心在于，不仅要评
+                                                  估单一资产的违约�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 估 (U+4F30)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��管理的核心在于，不仅要评估
+                                                  单一资产的违约概�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 单 (U+5355)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��理的核心在于，不仅要评估单
+                                                  一资产的违约概率�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 一 (U+4E00)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��的核心在于，不仅要评估单一
+                                                  资产的违约概率，�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 资 (U+8D44)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��核心在于，不仅要评估单一资
+                                                  产的违约概率，更�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 产 (U+4EA7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��心在于，不仅要评估单一资产
+                                                  的违约概率，更要�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 的 (U+7684)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��在于，不仅要评估单一资产的
+                                                  违约概率，更要关�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 违 (U+8FDD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��于，不仅要评估单一资产的违
+                                                  约概率，更要关注�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 约 (U+7EA6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��，不仅要评估单一资产的违约
+                                                  概率，更要关注在�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 概 (U+6982)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��不仅要评估单一资产的违约概
+                                                  率，更要关注在宏�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 率 (U+7387)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��仅要评估单一资产的违约概率
+                                                  ，更要关注在宏观�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character ， (U+FF0C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��要评估单一资产的违约概率，
+                                                  更要关注在宏观经�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 更 (U+66F4)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��评估单一资产的违约概率，更
+                                                  要关注在宏观经济�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 要 (U+8981)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��估单一资产的违约概率，更要
+                                                  关注在宏观经济波�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 关 (U+5173)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��单一资产的违约概率，更要关
+                                                  注在宏观经济波动�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 注 (U+6CE8)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��一资产的违约概率，更要关注
+                                                  在宏观经济波动下�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 在 (U+5728)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��资产的违约概率，更要关注在
+                                                  宏观经济波动下，�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 宏 (U+5B8F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��产的违约概率，更要关注在宏
+                                                  观经济波动下，不�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 观 (U+89C2)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��的违约概率，更要关注在宏观
+                                                  经济波动下，不同�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 经 (U+7ECF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��违约概率，更要关注在宏观经
+                                                  济波动下，不同资�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 济 (U+6D4E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��约概率，更要关注在宏观经济
+                                                  波动下，不同资产�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 波 (U+6CE2)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��概率，更要关注在宏观经济波
+                                                  动下，不同资产类�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 动 (U+52A8)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��率，更要关注在宏观经济波动
+                                                  下，不同资产类别�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 下 (U+4E0B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��，更要关注在宏观经济波动下
+                                                  ，不同资产类别之�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character ， (U+FF0C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��更要关注在宏观经济波动下，
+                                                  不同资产类别之间�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 不 (U+4E0D)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��要关注在宏观经济波动下，不
+                                                  同资产类别之间的�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 同 (U+540C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��关注在宏观经济波动下，不同
+                                                  资产类别之间的相�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 资 (U+8D44)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��注在宏观经济波动下，不同资
+                                                  产类别之间的相关�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 产 (U+4EA7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��在宏观经济波动下，不同资产
+                                                  类别之间的相关性�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 类 (U+7C7B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��宏观经济波动下，不同资产类
+                                                  别之间的相关性以�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 别 (U+522B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��观经济波动下，不同资产类别
+                                                  之间的相关性以及�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 之 (U+4E4B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��经济波动下，不同资产类别之
+                                                  间的相关性以及组�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 间 (U+95F4)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��济波动下，不同资产类别之间
+                                                  的相关性以及组合�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 的 (U+7684)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��波动下，不同资产类别之间的
+                                                  相关性以及组合整�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 相 (U+76F8)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��动下，不同资产类别之间的相
+                                                  关性以及组合整体�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 关 (U+5173)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��下，不同资产类别之间的相关
+                                                  性以及组合整体的�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 性 (U+6027)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��，不同资产类别之间的相关性
+                                                  以及组合整体的潜�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 以 (U+4EE5)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��不同资产类别之间的相关性以
+                                                  及组合整体的潜在�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 及 (U+53CA)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��同资产类别之间的相关性以及
+                                                  组合整体的潜在损�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 组 (U+7EC4)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��资产类别之间的相关性以及组
+                                                  合整体的潜在损失。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 合 (U+5408)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��产类别之间的相关性以及组合
+                                                  整体的潜在损失。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 整 (U+6574)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��类别之间的相关性以及组合整
+                                                  体的潜在损失。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 体 (U+4F53)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��别之间的相关性以及组合整体
+                                                  的潜在损失。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 的 (U+7684)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��之间的相关性以及组合整体的
+                                                  潜在损失。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 潜 (U+6F5C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��间的相关性以及组合整体的潜
+                                                  在损失。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 在 (U+5728)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��的相关性以及组合整体的潜在
+                                                  损失。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Test.tex:140: LaTeX Error: Unicode character 损 (U+635F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...��相关性以及组合整体的潜在损
+                                                  失。
+(That makes 100 errors; please try again.) 
+Here is how much of TeX's memory you used:
+ 11910 strings out of 467525
+ 182401 string characters out of 5418982
+ 616872 words of memory out of 5000000
+ 40693 multiletter control sequences out of 15000+600000
+ 629836 words of font info for 47 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,5n,79p,326b,498s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+./Test.tex:140:  ==> Fatal error occurred, no output PDF file produced!

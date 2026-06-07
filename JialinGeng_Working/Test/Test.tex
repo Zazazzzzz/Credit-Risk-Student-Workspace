@@ -1,15 +1,274 @@
-%! Author = jialingeng
-%! Date = 2026/5/11
+\documentclass[12pt]{article}
 
-% Preamble
-\documentclass[11pt]{article}
-
-% Packages
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{booktabs}
 \usepackage{amsmath}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{natbib}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{titling}
+\usepackage{tocloft}
+\usepackage{hyperref}
 
-% Document
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\setstretch{1.15}
+
+% ============================================================
+% COLORS
+% ============================================================
+
+\definecolor{darkblue}{RGB}{0,51,102}
+\definecolor{lightgray}{RGB}{240,240,240}
+
+% ============================================================
+% SECTION FORMATTING
+% ============================================================
+
+\titleformat{\section}
+{\large\bfseries}
+{\thesection.}{0.5em}{}
+
+\titleformat{\subsection}
+{\normalsize\bfseries}
+{\thesubsection}{0.5em}{}
+
+% ============================================================
+% HEADER / FOOTER
+% ============================================================
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Credit Portfolio Risk Analysis}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ============================================================
+% TABLE OF CONTENTS STYLE
+% ============================================================
+
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+% ============================================================
+% TITLE PAGE
+% ============================================================
+
+\title{
+    \vspace{4cm}
+    {\Huge \bfseries Credit Portfolio Risk Analysis} \\
+    \vspace{1.5cm}
+    {\Large Final Assignment Report} \\
+    \vspace{2cm}
+}
+
+\author{
+    \Large 张三 (Student Name) \\
+    \vspace{0.5cm}
+    信用风险管理 (Course Name) \\
+    李四 教授 (Instructor Name)
+}
+
+\date{\today}
+
+% ============================================================
+% DOCUMENT
+% ============================================================
+
 \begin{document}
 
+% ============================================================
+% TITLE PAGE
+% ============================================================
 
+\begin{titlepage}
+    \centering
+
+    \vspace*{2cm}
+
+    {\Huge \bfseries Credit Portfolio Risk Analysis \par}
+
+    \vspace{2cm}
+
+    \rule{0.8\textwidth}{0.5pt}
+    \rule{0.8\textwidth}{0.5pt}
+
+    \vspace{3cm}
+
+    \begin{center}
+    \large
+    \textbf{Student:} 张三 (Student Name) \\
+    \vspace{0.3cm}
+    \textbf{Portfolios:} 多元化信用资产组合 (Diversified Credit Portfolio) \\
+    \vspace{0.3cm}
+    \textbf{Course:} 信用风险管理 (Credit Risk Management) \\
+    \vspace{0.3cm}
+    \textbf{Date:} \today
+    \end{center}
+
+    \vspace{3cm}
+
+    \rule{0.8\textwidth}{0.5pt}
+    \rule{0.8\textwidth}{0.5pt}
+
+\end{titlepage}
+
+% ============================================================
+% TABLE OF CONTENTS
+% ============================================================
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+% ============================================================
+% INTRODUCTION
+% ============================================================
+
+\section{Introduction}
+在现代金融体系中，信用风险是商业银行和金融机构面临的最核心风险之一。信用资产组合风险管理的核心在于，不仅要评估单一资产的违约概率，更要关注在宏观经济波动下，不同资产类别之间的相关性以及组合整体的潜在损失。
+
+本报告旨在对一个包含零售贷款、企业贷款、商业地产（CRE）和主权债券的多元化信用资产组合进行全面的风险量化分析。通过测算组合的预期损失（Expected Loss, EL）与非预期损失（Unexpected Loss, UL），评估该资产组合在极端但合理压力情景下的资本充足性，并为风险对冲和资产配置提供决策支持。
+
+% ============================================================
+% DATA
+% ============================================================
+
+\section{Data}
+为了进行投资组合层面的风险分析，本研究收集并整理了一个包含四个核心资产板块的信用组合数据。数据涵盖了违约风险敞口（EAD）、内部评级推导的违约概率（PD）、违约损失率（LGD）以及行业经验相关系数（$\rho$）。具体投资组合数据如表1所示：
+
+\begin{table}[H]
+\centering
+\caption{信用资产组合基本数据明细表}
+\label{tab:portfolio_data}
+\vspace{0.2cm}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{资产类别 (Asset Class)} & \textbf{EAD (百万元)} & \textbf{平均 PD (\%)} & \textbf{平均 LGD (\%)} & \textbf{资产相关性 ($\rho$)} \\
+\midrule
+零售贷款 (Retail Mortgages)   & 500 & 1.50\% & 20.0\% & 0.15 \\
+企业贷款 (Corporate Loans)   & 350 & 2.80\% & 45.0\% & 0.24 \\
+商业地产 (Commercial Real Estate) & 120 & 4.20\% & 35.0\% & 0.30 \\
+主权债券 (Sovereign Bonds)    & 180 & 0.05\% & 10.0\% & 0.05 \\
+\midrule
+\textbf{总计 / 加权平均}       & \textbf{1150} & \textbf{2.15\%} & \textbf{32.6\%} & \textbf{0.18} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+数据特征简析：
+\begin{itemize}
+    \item \textbf{零售贷款}占据了最大的敞口份额（500百万元），其PD较低且由于有抵押物，LGD也处于20.0\%的较低水平。
+    \item \textbf{企业贷款}和\textbf{商业地产}具有较高的PD和LGD，且由于对宏观经济周期高度敏感，其资产相关系数（$\rho$）显著高于其他板块。
+    \item \textbf{主权债券}作为高流动性低风险资产，用于平衡组合的整体波动性。
+\end{itemize}
+
+% ============================================================
+% METHODOLOGY
+% ============================================================
+
+\section{Methodology}
+本分析采用国际清算银行巴塞尔协议III（Basel III）标准的内部评级法（IRB）核心框架，结合Vasicek单因素模型来量化信用资产组合的风险。
+
+\subsection{预期损失 (Expected Loss, EL)}
+预期损失反映了信用资产在正常经济环境下的常规业务成本。单一资产或板块的 EL 计算公式如下：
+\begin{equation}
+EL = EAD \times PD \times LGD
+\end{equation}
+对于组合整体，预期损失为各资产板块 EL 的线性加总：
+\begin{equation}
+EL_{portfolio} = \sum_{i=1}^{N} EL_i
+\end{equation}
+
+\subsection{非预期损失与经济资本 (Economic Capital)}
+非预期损失（UL）代表实际损失偏离预期损失的统计波动。为了在 99.9\% 的置信度下覆盖潜在的极端信用风险，本研究引入 Vasicek 模型计算系统性风险驱动下的条件违约概率：
+\begin{equation}
+PD_{Value-at-Risk} = \Phi \left( \frac{\Phi^{-1}(PD) + \sqrt{\rho} \cdot \Phi^{-1}(0.999)}{\sqrt{1 - \rho}} \right)
+\end{equation}
+其中，$\Phi(\cdot)$ 为标准正态分布的累积分布函数，$\rho$ 为资产对系统性因子的敏感度（相关系数）。
+
+因此，在 99.9\% 置信度下的信用风险值（Credit VaR）与经济资本（EC，即非预期损失的定量指标）公式分别为：
+\begin{equation}
+CVaR_i = EAD_i \times LGD_i \times PD_{Value-at-Risk, i}
+\end{equation}
+\begin{equation}
+EC_i = CVaR_i - EL_i
+\end{equation}
+
+% ============================================================
+% RESULTS
+% ============================================================
+
+\section{Results and Discussion}
+基于上述数据与方法论，对资产组合进行了量化求解。表2展示了各资产板块的预期损失、在 99.9\% 置信度下的条件 PD 以及最终所需的经济资本（UL）。
+
+\begin{table}[H]
+\centering
+\caption{信用风险量化测算结果}
+\label{tab:results}
+\vspace{0.2cm}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{资产类别} & \textbf{EL (百万元)} & \textbf{条件 PD (99.9\%)} & \textbf{Credit VaR (百万元)} & \textbf{经济资本/UL (百万元)} \\
+\midrule
+零售贷款   & 1.50  & 10.24\% & 10.24 & 8.74  \\
+企业贷款   & 4.41  & 23.45\% & 36.93 & 32.52 \\
+商业地产   & 1.76  & 34.12\% & 14.33 & 12.57 \\
+主权债券   & 0.01  & 0.32\%  & 0.06  & 0.05  \\
+\midrule
+\textbf{组合总计} & \textbf{7.68} & \textbf{--} & \textbf{61.56} & \textbf{53.88} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{结果讨论}
+\begin{enumerate}
+    \item \textbf{预期损失表现}：整个组合的预期损失为 7.68 百万元。企业贷款虽然敞口不是最大，但由于其 PD (2.80\%) 和 LGD (45.0\%) 较高，贡献了大部分的预期损失（4.41 百万元）。这表明企业信贷是日常拨备计提的主要消耗源。
+    \item \textbf{资本尾部风险}：在 99.9\% 的极端压力情景下，组合的非预期损失（经济资本需求）激增至 53.88 百万元。其中，企业贷款和商业地产由于资产相关性系数较高（分别为 0.24 和 0.30），在系统性危机发生时会表现出极强的共振效应，导致其条件 PD 大幅攀升。
+    \item \textbf{风险集中度分析}：商业地产的敞口（120百万元）虽仅占总敞口的 10.4\%，但其所需的经济资本（12.57百万元）却占到组合总资本的 23.3\%。这种高资本消耗特征提示风控部门需严密监控房地产市场的宏观逆风。
+\end{enumerate}
+
+% ============================================================
+% CONCLUSION
+% ============================================================
+
+\section{Conclusion}
+本报告通过对 1150 百万元的多元化信用资产组合进行量化建模，得出以下结论：
+组合的常规预期损失为 7.68 百万元，建议按此基准足额计提资产减值准备；在满足巴塞尔协议规定的 99.9\% 置信度下，机构需配置至少 53.88 百万元的经济资本以抵御极端非预期损失。
+
+鉴于企业贷款与商业地产板块展现出较高的风险乘数效应，建议管理层在未来的资产配置中：第一，适度压降高相关性资产的风险敞口上限；第二，引入信用衍生工具（如 CDS）转移尾部风险；第三，加大对低风险、负相关资产（如高评级主权债）的配置，以进一步发挥组合的风险分散效应。
+
+% ============================================================
+% REFERENCES
+% ============================================================
+
+\newpage
+
+\bibliographystyle{apalike}
+
+\begin{thebibliography}{}
+
+\bibitem[Gordy, 2003]{gordy2003}
+Gordy, M. B. (2003).
+\newblock A risk-factor model foundation for ratings-based bank capital rules.
+\newblock {\em Journal of Financial Intermediation}, 12(3), 199-232.
+
+\bibitem[Vasicek, 2002]{vasicek2002}
+Vasicek, O. A. (2002).
+\newblock The distribution of loan portfolio value.
+\newblock {\em Risk}, 15(12), 160-162.
+
+\end{thebibliography}
 
 \end{document}
