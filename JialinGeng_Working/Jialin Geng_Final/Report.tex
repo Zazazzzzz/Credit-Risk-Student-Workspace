@@ -231,7 +231,7 @@ The implied default correlation corresponding to this model can be expressed as:
 \subsection{Factor Model}
 
 \subsubsection{Single-Factor Model}
-Modeling was conducted separately for the three portfolios, and the results are summarized in Figure \ref{fig:multi_factor_comparison}. From these findings, we can observe that the Value at Risk (VaR) of Portfolio 3 is significantly higher than that of Portfolio 1 and Portfolio 2. Different industrial sectors are interconnected; if correlations exist within the same systemic factor (Industry), a default triggered by this factor can lead to far more severe default losses (VaR) than under normal conditions. Therefore, for this type of portfolio, institutions must set aside more Economic Capital (EC) to absorb potential Unexpected Losses (UL) that may be incurred over the horizon of the following year.
+Modeling was conducted separately for the three portfolios, and the results are summarized in Figure \ref{fig:multi_factor_comparison}. From these findings, we can observe that the Value at Risk (VaR) of Portfolio 3 is significantly higher than that of Portfolio 1 and Portfolio 2. Different industrial sectors are interconnected; if correlations exist within the same systemic factor (Industry), a default triggered by this factor can lead to far more severe default losses (VaR) than under normal conditions. Therefore, for this type of portfolio, institutions must set aside more Economic Capital (EC) to absorb potential Unexpected Losses (UL) that may be incurred over the horizon of the following year. Observing Table \ref{tab:portfolio_var_factor_model}, we can also find that the VaR calculated by the analytical method is lower than that calculated by the simulation method.
 \begin{figure}[H]
     \centering  % <--- 这一行是关键，它会使环境内的内容水平居中
     \includegraphics[width = 0.5\textwidth]{figure_1}
@@ -239,8 +239,29 @@ Modeling was conducted separately for the three portfolios, and the results are 
     \label{fig:one_factor_comparison}
 \end{figure}
 
+\begin{table}[H]
+    \centering
+    \caption{Portfolio VaR(99\%) Comparison}
+    \label{tab:portfolio_var_factor_model}
+    \begin{tabular}{|l|p{4.2cm}|p{3.8cm}|p{4.2cm}|}
+        \hline
+        \textbf{Portfolio} & \textbf{One-Factor Monte Carlo (VaR 99\%)} & \textbf{Vasicek Analytical (VaR 99\%)} & \textbf{Multi-Factor Monte Carlo (VaR 99\%)} \\
+        \hline
+        \hline
+        \textbf{Portfolio 1} & \$34.67M & \$12.00M & \$52.35M \\
+        \hline
+        \textbf{Portfolio 2} & \$57.19M & \$27.94M & \$110.06M \\
+        \hline
+        \textbf{Portfolio 3} & \$86.71M & N/A (Single-Factor Only) & \$83.25M \\
+        \hline
+    \end{tabular}
+\end{table}
+
+
 \subsubsection{Multi-Factor Model}
-As illustrated in figure \ref{fig:multi_factor_comparison}, under the multi-factor model framework, additional systemic factors amplify the fat-tail effect, thereby increasing the Value at Risk (VaR). Furthermore, if interdependencies exist among identical systemic factors within the portfolio (as observed in Portfolio 3, shown in Figure \ref{fig:multi_factor_comparison}-(c)), the fat-tail effect can be further exacerbated, leading to an even higher VaR. Consequently, institutions need to set aside more Economic Capital (EC) to absorb potential Unexpected Losses (UL) that may be incurred over the horizon of the following year.
+As illustrated in Figure \ref{fig:multi_factor_comparison}, under the multi-factor model framework, the inclusion of additional systemic factors amplifies the fat-tail effect, thereby increasing the Value at Risk (VaR). Furthermore, as shown in Figure \ref{fig:multi_factor_comparison}-(c), the VaR simulated by the multi-factor model is higher than that from the single-factor model, which is more aligned with reality. Under the influence of multiple factors, the fat-tail effect can be further exacerbated, leading to an even higher VaR. Consequently, financial institutions need to set aside more Economic Capital (EC) to absorb potential Unexpected Losses (UL) that may be incurred over the horizon of the following year.
+
+Observing Table \ref{tab:portfolio_var_factor_model}, however, if interdependencies exist among identical systemic factors within the portfolio (as observed in Portfolio 3), the variance in VaR values under the multi-factor model becomes less pronounced. This is because when simulating Portfolio 3—which comprises two distinct industrial factors (Industry A and Industry B)—the model inherently accounts for the impacts of different factors on the latent variables, essentially functioning as a multi-factor model. As a result, the difference in VaR at this point is not particularly significant.
 
 \begin{figure}[H]
     \centering
@@ -273,6 +294,8 @@ As illustrated in figure \ref{fig:multi_factor_comparison}, under the multi-fact
 
 \subsection{Beta-Binomial Model}
 The Beta-Binomial model was utilized again to simulate Portfolios 1 and 2. As illustrated in Figure \ref{fig:simulation under beta_binomial model}, this further verifies that the default loss does not follow a normal distribution; instead, more extreme values occur, manifesting as a so-called "fatter tail."
+
+As an additional attempt, the code was obtained after consulting the AI (named Simulation for Portfolio 3 under Beta-Binomial Model.py).
 
 \begin{figure}[H]
     \centering
@@ -319,7 +342,7 @@ The probabilities of correlated defaults will have a fatter tail, indicating a h
     Vasicek, O. A. (2002). \textit{The distribution of loan portfolio value}. Risk, 15(12), 160-162.
 
 \bibitem{key3}
-    Gupton, G. M., Finger, C. C., & Bhatia, M. (1997). \textit{CreditMetrics—Technical Document}. J.P. Morgan, New York.
+    Gupton, G. M., Finger, C. C., \& Bhatia, M. (1997). \textit{CreditMetrics—Technical Document}. J.P. Morgan, New York.
 
 
 \end{thebibliography}
