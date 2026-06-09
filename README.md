@@ -18,18 +18,24 @@ The goal is not perfection, but practice.
 
 
 
-## Final Assignment
+## Oral Examination
 
 
 
-Please submit your work as follows:
+Please note the following information regarding the oral examination:
 
 
-* Create a folder named **YourName_Final** in your branch containing: **code file(s)**, **report (PDF)**, **a results subfolder**
+* The schedule is published on **ILIAS**.
 
-* As a contingency, **email the zipped folder** to hongyi.shen@finance.uni-freiburg.de
 
-* Please submit before **4th, June**
+* Please arrive **10 minutes before your scheduled examination time** and bring your **student ID**.
+
+
+* No slides, presentations, or other visual aids are required.
+
+
+* The examination will consist of a discussion of your submitted work. You will be asked questions about your methodology, implementation, results, and the reasoning behind your decisions. Feedback on your submission will also be provided during the session.
+
 
 
 ---
